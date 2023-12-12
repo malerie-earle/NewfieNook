@@ -6,4 +6,4 @@ const ShoppingCartContext = () => {
   )
 }
 
-export default ShoppingCartContext
+export default ShoppingCartContext;
