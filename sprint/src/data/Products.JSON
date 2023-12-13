@@ -1,0 +1,481 @@
+[
+  {
+  "id": 1,
+  "title": "Purity Syrup: Blue Raspberry",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupblue-600x400-1.jpg"
+},
+{
+  "id": 2,
+  "title": "Purity Syrup: Raspberry",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupraspberry-600x400-1.jpg"
+},
+{
+  "id": 3,
+  "title": "Purity Syrup: Strawberry",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupstrawberry-600x400-1.jpg"
+},
+{
+  "id": 4,
+  "title": "Purity Syrup: Orange",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syruporange-600x400-1.jpg"
+},
+{
+  "id": 5,
+  "title": "Purity Syrup: Cherry",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupcherry-600x400-1.jpg"
+},
+{
+  "id": 6,
+  "title": "Purity Syrup: Fruit Punch",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupfruit-600x400-1.jpg"
+},
+{
+  "id": 7,
+  "title": "Purity Syrup: Iced Tea",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupicedtea-600x400-1.jpg"
+},
+{
+  "id": 8,
+  "title": "Purity Syrup: Pineapple",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syruppineapple-600x400-1.jpg"
+},
+{
+  "id": 9,
+  "title": "Purity: Chocolate Chip Cookies",
+  "price": "$5.49",
+  "category": "Food & Drink",
+  "description": "Our crave-worthy version of the classic cookie, with plenty of chocolate chips for your pleasure.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-chocolatechip-600x400-1.jpg"
+},
+{
+  "id": 10,
+  "title": "Purity: Family Favourites",
+  "price": "$5.75",
+  "category": "Food & Drink",
+  "description": "A wide variety of tasty cookies from which to choose. What’s your favourite?",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-familyfavs-600x400-1.jpg"
+},
+{
+  "id": 11,
+  "title": "Purity: Fancy Biscuit Assortment",
+  "price": "$5.29",
+  "category": "Food & Drink",
+  "description": "A wide variety of sweet biscuits makes for a satisfying snack.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-fancybiscuitassorted-600x400-1.jpg"
+},
+{
+  "id": 12,
+  "title": "Purity: Variety Pack Biscuits",
+  "price": "$7.95",
+  "category": "Food & Drink",
+  "description": "A different type of cookie in each section. Great for those who enjoy variety, or for larger gatherings.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-varietypack-600x400-1.jpg"
+},
+{
+  "id": 13,
+  "title": "Purity: Jam Jams 350G",
+  "price": "$4.49",
+  "category": "Food & Drink",
+  "description": "Moist, jam-filled sponge cookies. A traditional favourite. Available in a 350G Tin Tied package.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-jamjams350-600x400-1.jpg"
+},
+{
+  "id": 14,
+  "title": "Purity: Jam Jams 425G",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "Moist, jam-filled sponge cookies. A traditional favourite. Available in a resealable 425G package.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-jamjams425-600x400-1.jpg"
+},
+{
+  "id": 15,
+  "title": "Purity: Tea-Vees",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Jelly-filled sponge cookies that are a welcome treat any time of the day.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-teevees-600x400-1.jpg"
+},
+{
+  "id": 16,
+  "title": "Purity: Coconut Bar",
+  "price": "$6.49",
+  "category": "Food & Drink",
+  "description": "Our delicious Coconut Bar cookies at tea-time makes for a delightful treat.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-coconutbar-600x400-1.jpg"
+},
+{
+  "id": 17,
+  "title": "Purity: Lemon Creams",
+  "price": "$7.99",
+  "category": "Food & Drink",
+  "description": "A biscuit baked to the perfect texture with a hint of lemon flavour.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-lemoncreams-600x400-1.jpg"
+},
+{
+  "id": 18,
+  "title": "Purity: Caraway Biscuits",
+  "price": "$6.99",
+  "category": "Food & Drink",
+  "description": "Mouthwatering and moreish, they make for an excellent after-dinner or anytime snack.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-caraway-600x400-1.jpg"
+},
+{
+  "id": 19,
+  "title": "Purity: Family Cookies",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "A tasty combination of nutritious oatmeal and dried raisins.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-familycookies-600x400-1.jpg"
+},
+{
+  "id": 20,
+  "title": "Purity: Oatmeal Biscuits",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "Our delicious take on the traditional oatmeal cookie. Loaded with flavour.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-oatmealbisuits-600x400-1.jpg"
+},
+{
+  "id": 21,
+  "title": "Purity: Ginger Cookies",
+  "price": "$6.99",
+  "category": "Food & Drink",
+  "description": "Great ginger flavour in a larger cookie with just the right amount of “more please”.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-gingercookies-600x400-1.jpg"
+},
+{
+  "id": 22,
+  "title": "Purity: Ginger Snaps",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Traditional, delicious, and made with plenty of ginger spice. The name comes from the “snap” sound when you break them.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-gingersnaps-600x400-1.jpg"
+},
+{
+  "id": 23,
+  "title": "Purity: Round Milk Lunch Biscuits",
+  "price": "$5.50",
+  "category": "Food & Drink",
+  "description": "Low in fat and cholesterol free, these round biscuits are a perfect snack.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-milkround2-600x400-1.jpg"
+},
+{
+  "id": 24,
+  "title": "Purity: Square Milk Lunch Biscuits",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "For those who prefer a square shaped biscuit that is low in fat and cholesterol free.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-milksquare2-600x400-1.jpg"
+},
+{
+  "id": 25,
+  "title": "Purity: Classic Milk Lunch Biscuits",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "A thinner, sweeter biscuit with a flakier snap. Pairs nicely with your favourite spread.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-milkclassic-600x400-1.jpg"
+},
+{
+  "id": 26,
+  "title": "Purity: Hamilton's Milk Lunch Biscuits",
+  "price": "$5.99",
+  "category": "Food & Drink",
+  "description": "A crisp and tender biscuit with a light milky flavour.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-milkhamilton3-600x400-1.jpg"
+},
+{
+  "id": 27,
+  "title": "Purity: Cream Crackers",
+  "price": "$6.49",
+  "category": "Food & Drink",
+  "description": "Our most famous cracker with the unmistakable airy texture and irresistible flavour.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-creamcracker-600x400-1.jpg"
+},
+{
+  "id": 28,
+  "title": "Purity: Cream Crackers 25% Less Fat",
+  "price": "$6.49",
+  "category": "Food & Drink",
+  "description": "All the mouthwatering enjoyment of our regular cream cracker in a 25% less fat alternative.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-creamcracker25b-600x400-1.jpg"
+},
+{
+  "id": 29,
+  "title": "Purity: Cream Crisps Crackers 200G",
+  "price": "$3.99",
+  "category": "Food & Drink",
+  "description": "Flaky goodness that pairs perfectly with your favourite jam or spread.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-creamcrisps-600x400-1.jpg"
+},
+{
+  "id": 30,
+  "title": "Purity: Cream Crisps Crackers 400G",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Flaky goodness that pairs perfectly with your favourite jam or spread.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-creamcrisps-600x400-1.jpg"
+},
+{
+  "id": 31,
+  "title": "Purity: Tip Top Crackers",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "This flaky, mouthwatering soda cracker is perfect solo or in your favourite soup.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-tiptop-600x400-1.jpg"
+},
+{
+  "id": 32,
+  "title": "Purity: Assorted Kisses",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "An enviable assortment of our chewy, delectable, handmade kisses.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-tiptop-600x400-1.jpg"
+},
+{
+  "id": 33,
+  "title": "Purity: Peanut Butter Kisses",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "When peanut butter lovers want something extra indulgent, these kisses deliver.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-peanutbutterkisses-600x400-1.jpg"
+},{
+  "id": 34,
+  "title": "Purity: Rum & Butter Kisses",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Buttery-smooth and creamy with just the right punch of rum flavour.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-rumbutterkisses-600x400-1.jpg"
+},
+{
+  "id": 35,
+  "title": "Purity: Bulls Eyes",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Irresistible handmade molasses morsels you’ll savour over and over.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-bullseyes-600x400-1.jpg"
+},
+{
+  "id": 36,
+  "title": "Purity: Candy Barrels",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Green? Black? Everyone’s got a favourite. Our candy barrels are fun-shaped and bursting with fruit flavours.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-candybarrels-600x400-1.jpg"
+},
+{
+  "id": 37,
+  "title": "Purity: Climax Mixture",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Our classic colourful candy overflowing with a rainbow of fruit flavours.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-climaxmixture-600x400-1.jpg"
+},
+{
+  "id": 38,
+  "title": "Purity: Spearmint Nobs",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "A refreshing spearmint treat handmade by our candy makers.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-spearmintnobs2-600x400-1.jpg"
+},
+{
+  "id": 39,
+  "title": "Purity: Spearmint Lumps",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Always on hand when a substantial blast of spearmint freshness is in order.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-spearmintlumps-600x400-1.jpg"
+},
+{
+  "id": 40,
+  "title": "Purity: Peppermint Nobs 170G",
+  "price": "$4.49",
+  "category": "Food & Drink",
+  "description": "Our famously “moreish” peppermint morsels",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-peppermintnobs3-600x400-1.jpg"
+},
+{
+  "id": 41,
+  "title": "Purity: Peppermint Nobs 325G",
+  "price": "$6.29",
+  "category": "Food & Drink",
+  "description": "Our famously “moreish” peppermint morsels",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-peppermintnobs3-600x400-1.jpg"
+},
+{
+  "id": 42,
+  "title": "Purity: Peppermintt Lumps",
+  "price": "$4.99",
+  "category": "Food & Drink",
+  "description": "Lovable, shareable lumps of bold peppermint flavour.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-peppermintlumps2-600x400-1.jpg"
+},
+{
+  "id": 43,
+  "title": "Purity: Goodie Box",
+  "price": "$39.99",
+  "category": "Food & Drink",
+  "description": "TREAT YOURSELF OR SOMEONE YOU LOVE TO A LARGE ASSORTMENT OF MUCH-LOVED PURITY FAVOURITES! FROM APPLE AND PARTRIDGEBERRY JAM TO PEPPERMINT NOBS, WE’VE GATHERED THE PURITY PRODUCTS YOU CRAVE INTO ONE AMAZING BOX OF GOODIES. Includes 1x Bottle Flavoured Syrup, 1x Package Cream Crackers, 1x Package Lemon Creams, 1x Package Assorted Kisses, 1x Package Peppermint Nobs, 1x 250ml Tub Partridgeberry/Apple Jam, 1x Package Jam Jams",
+  "image": "https://purity.nf.ca/wp-content/uploads/2016/09/goodieboxwithproducts-wide.jpg"
+},
+{
+  "id": 44,
+  "title": "Purity: Men's Trademark T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "SUPER SOFT TO THE TOUCH AND SHOWCASING THE ICONIC PURITY TRADEMARK, THIS TRI-BLEND T-SHIRT IS LIGHTWEIGHT AND COMFORTABLE WITH ROOM TO MOVE. THE UNIQUE FABRIC BLEND IS DESIGNED FOR DURABILITY, ENSURING YOU’LL GET YEARS OF WEAR FROM THIS QUALITY T-SHIRT. Includes super soft tri-blend, semi-fitted with side-seam construction, double-needle sleeve and bottom hems, 50% polyester, 25% combed and ring-spun cotton, 25% rayon. Sizes: S - XXL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2017/12/caribou-charcoal-men.jpg"
+},
+{
+  "id": 45,
+  "title": "Purity: Official Logo Cap",
+  "price": "$16.95",
+  "category": "Clothing",
+  "description": "THE PERFECT CAP HAS ARRIVED! THIS DURABLE, ONE-SIZE-FITS-ALL WASHED BLACK TWILL CAP IS A GREAT GIFT FOR SOMEONE YOU LOVE, AND AN EXCELLENT WAY TO CAP OFF YOUR OWN WARDROBE. It's 100% Cotton, Unstructured Soft-Lined Front Matching Adjustable Self Back Strap.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/10/purityballhot-600x600-1.jpg"
+},
+{
+  "id": 46,
+  "title": "Purity: Unisex Hard Bread T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "FEATURING OUR FAMOUS PURITY HARD BREAD, THIS T-SHIRT IS EASY TO LOVE! VIBRANTLY COLOURED IN SIGNATURE PURITY RED AND VERY DURABLE, THIS EYE-CATCHING T-SHIRT IS MADE OF A QUALITY FABRIC BLEND TO GIVE YOU YEARS OF WEAR AND ENJOYMENT. It's super soft, semi-fitted with side-seam construction, Tear Away Label, 100% ring-spun cotton. Sizes: S – XXL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2019/10/female-hard-bread-t-shirt.jpg"
+},
+{
+  "id": 47,
+  "title": "Purity: Unisex Jam Jams Crewneck Fleece",
+  "price": "$34.99",
+  "category": "Clothing",
+  "description": "LET THE WORLD KNOW HOW MUCH YOU LOVE JAM JAMS WITH THIS SOFT AND DURABLE CREWNECK FLEECE SWEATSHIRT THAT FEATURES THE PURITY LOGO AND PAYS TRIBUTE TO THE MOISTEST, MOST ICONIC COOKIE AROUND! It's 50/50 combed ring-spun cotton/polyester, Ribbed neck and cuffs, Double-needle stitched neck, Double-needle stitched armholes, cuffs, and waistband. Sizes S - 3XL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2021/05/purityunisexcrewneckfleece-grey.png"
+},
+{
+  "id": 48,
+  "title": "Purity: Unisex Jam Jams T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "IT’S THE MOST DELICIOUS ADDITION TO YOUR WARDROBE YET! SOFT, LIGHTWEIGHT AND COMFORTABLE, THIS QUALITY T-SHIRT FEATURES THE ICONIC PURITY JAM JAM COOKIE AND LOGO. MADE OF A UNIQUELY DURABLE FABRIC BLEND, THE JAM JAM T-SHIRT IS SURE TO IMPRESS YOUR FRIENDS. IT MIGHT MAKE THEM HUNGRY TOO! Super soft tri-blend. Semi-fitted with side-seam construction, Double-needle sleeve and bottom hems, 50% polyester, 25% combed and ring-spun cotton, 25% rayon.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2019/10/purityjamjamtshirt-man_600.jpg"
+},
+{
+  "id": 49,
+  "title": "Purity: Unisex Crewneck Fleece",
+  "price": "$34.99",
+  "category": "Clothing",
+  "description": "SUPER SOFT TO THE TOUCH AND BIG ON COMFORT AND STYLE. WEAR YOUR PURITY PRIDE AND KEEP PERFECTLY COZY WITH THIS DURABLE CREWNECK FLEECE SWEATSHIRT IN HEATHER RED AND FEATURING THE CLASSIC PURITY LOGO. It's 50% combed ring-spun cotton, 50% polyester, 12.5 oz, Double-needle stitch on armholes, cuffs, waistband and around the neck, Side-seamed, Rib neck and cuffs. Sizes S-3XL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2019/11/purityunisexcrewneckfleece02.jpg"
+},
+{
+  "id": 50,
+  "title": "Purity: Unisex Purity Nob T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "IT WON’T RUIN YOUR PARTY, OR YOUR WARDROBE! FEATURING OUR FAMOUS PEPPERMINT NOBS, THIS SOFT AND DURABLE QUALITY T-SHIRT MAKES AN EYE-CATCHING FASHION STATEMENT THAT CAPTURES THE FUN OF PURITY. Super Soft and Semi-fitted, Side Seams, TearAway label, 100% ring spun cotton.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2019/02/front-female-purity-nob-t-shirt.jpg"
+},
+{
+  "id": 51,
+  "title": "Purity: Unisex Signature Products T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "DURABLE, SUPER-SOFT T-SHIRT LISTING POPULAR PURITY FAVOURITES. MANUFACTURED FOR LONG WEAR AND IMPRESSING YOUR FRIENDS, IT’S A PURITY FAN MUST-HAVE! Pre-shrunk, Semi-fitted,Tear-away Tag.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2021/03/shop-tshirt-2021a.jpg"
+},
+{
+  "id": 52,
+  "title": "Purity: Unisex Purity Vintage Hoodie",
+  "price": "$39.99",
+  "category": "Clothing",
+  "description": "SOFT TO THE TOUCH WITH A COMFY FIT, PURITY VINTAGE HOODIES ARE THE PERFECT EXPRESSION OF EVERYDAY STYLE. MADE FROM QUALITY MATERIALS, THIS DURABLE PULLOVER IS SURE TO BECOME AN ESSENTIAL ITEM IN YOUR CASUAL WARDROBE. It's Classic fit, Preshrunk fleece knit, Unlined hood with white drawcords, Double-needle topstitch at neck, 1×1 rib spandex cuffs and waistband, Pouch pocket, & 70% combed ring spun cotton / 30% polyester. Sizes S - 2XL",
+  "image": "https://purity.nf.ca/wp-content/uploads/2018/06/sweatshirt-grunge-grey.jpg"
+},
+{
+  "id": 53,
+  "title": "Purity: Unisex Purity Vintage Hoodie",
+  "price": "$39.99",
+  "category": "Clothing",
+  "description": "SOFT TO THE TOUCH WITH A COMFY FIT, PURITY VINTAGE HOODIES ARE THE PERFECT EXPRESSION OF EVERYDAY STYLE. MADE FROM QUALITY MATERIALS, THIS DURABLE PULLOVER IS SURE TO BECOME AN ESSENTIAL ITEM IN YOUR CASUAL WARDROBE. It's Classic fit, Preshrunk fleece knit, Unlined hood with white drawcords, Double-needle topstitch at neck, 1×1 rib spandex cuffs and waistband, Pouch pocket, & 70% combed ring spun cotton / 30% polyester. Sizes S - 2XL",
+  "image": "https://purity.nf.ca/wp-content/uploads/2018/05/sweatshirt-grunge-black.jpg"
+},
+{
+  "id": 54,
+  "title": "Purity: Unisex/Men's Red Trademark T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "SUPER SOFT AND COMFORTABLE, WITH THE ICONIC PURITY TRADEMARK. THIS UNIQUE FABRIC BLEND IS DESIGNED FOR DURABILITY, ENSURING YOU’LL GET YEARS OF WEAR. Preshrunk jersey knit, Semi-fitted with side seam construction, Double-needle sleeve and bottom hems, TearAway label. 50% polyester, 25% combed ring spun cotton, 25% rayon. Sizes: S-XXL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/09/puritytsforstoremens400x400.jpg"
+},
+{
+  "id": 55,
+  "title": "Purity: Women's Red Trademark T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "SAY HELLO TO YOUR NEW FAVOURITE T-SHIRT FEATURING OUR ICONIC PURITY TRADEMARK. THE UNIQUE FABRIC BLEND IS CRAFTED TO STAND UP TO YEARS OF WEAR WITH COMFORT AND STYLE. Preshrunk jersey knit, Semi-fitted contoured silhouette, Flattering curved bottom hem, TearAway label,50% polyester, 25% combed ring spun cotton, 25% rayon Sizes: S-XXL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2020/09/puritytsforstore400x400.jpg"
+},
+{
+  "id": 56,
+  "title": "Purity: Women's Purity Trademark T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "FEATURING THE INSTANTLY RECOGNIZABLE PURITY TRADEMARK AND A UNIQUE TRI-BLEND FABRIC THAT’S CRAFTED TO STAND UP TO YEARS OF WEAR AND WASHING, THIS ALWAYS-SMOOTH AND COMFY FITTING T-SHIRT IS NEVER SHORT ON COMFORT OR STYLE. Super soft tri-blend, Fitted style with side-seam construction, Double-needle sleeve and bottom hems, 50% polyester, 25% combed and ring-spun cotton, 25% rayon. Sizes: M-XL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2016/09/caribou-flek-women.jpg"
+},
+{
+  "id": 57,
+  "title": "Purity: Women's Purity Trademark T-Shirt",
+  "price": "$24.99",
+  "category": "Clothing",
+  "description": "FEATURING THE INSTANTLY RECOGNIZABLE PURITY TRADEMARK AND A UNIQUE TRI-BLEND FABRIC THAT’S CRAFTED TO STAND UP TO YEARS OF WEAR AND WASHING, THIS ALWAYS-SMOOTH AND COMFY FITTING T-SHIRT IS NEVER SHORT ON COMFORT OR STYLE. Super soft tri-blend, Fitted style with side-seam construction, Double-needle sleeve and bottom hems, 50% polyester, 25% combed and ring-spun cotton, 25% rayon. Sizes: M-XL.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2017/12/caribou-charcoal-women.jpg"
+},
+{
+  "id": 58,
+  "title": "Purity: Official Purity Cotton Tote",
+  "price": "$7.99",
+  "category": "Merchandise",
+  "description": "Step out in sweet Purity style with our durable must-have cotton tote bag featuring the iconic Purity logo. This quality tote bag is built for strength with reinforced cotton webbing handles and is sure to be a stylish companion on your next shopping trip! Classic tote bag design, 24″ long cotton webbing handles. It's 100% natural cotton. ",
+  "image": "https://purity.nf.ca/wp-content/uploads/2019/07/totes.jpg"
+},
+{
+  "id": 59,
+  "title": "Purity: Official Purity Logo Mug",
+  "price": "$12.95",
+  "category": "Merchandise",
+  "description": "PERFECT FOR YOUR MORNING COFFEE OR TEA, WEEKENDS BY THE CAMPFIRE, OR AT THE CABIN. THIS PURITY CLASSIC METAL MUG WITH STAINLESS-STEEL RIM HAS A LARGE HANDLE FOR A COMFORTABLE GRIP AND ITS DURABLE METAL CONSTRUCTION MEANS YOU’LL GET YEARS OF USE. Great for the cabin or the office, Metal construction, with the classic Purity logo, Stainless Steel-Rim, Hand wash only.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2021/08/purity-mug-for-web-copy2.jpg"
+},
+{
+  "id": 60,
+  "title": "Purity: Official Purity Playing Cards",
+  "price": "$9.95",
+  "category": "Merchandise",
+  "description": "MAKE YOUR NEXT GAME OF CARDS EVEN SWEETER WITH THIS STACK OF CUSTOM PLAYING CARDS FEATURING THE PURITY LOGO.",
+  "image": "https://purity.nf.ca/wp-content/uploads/2021/03/shop-cards-2021b.jpg"
+}
+]
