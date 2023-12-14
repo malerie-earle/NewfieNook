@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
-import productsData from "../data/Products.JSON"; 
+import ProductList from "../data/Products.JSON"; 
 import nlcircle from "../images/NLcircle.png";
 import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
 import Nav from "../components/Nav.jsx";
+import { useShoppingCart } from '../context/ShoppingCartContext'; // gonna need this eventually i think
+
 
 
 const Home = () => {
   const [products, setProducts] = useState([]);
-
+  const productsData = {ProductList};
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -66,6 +68,7 @@ const Home = () => {
         <div className = "feature" id = "feat4"></div>
         </div>
         </div>
+        <ProductList />
         </div>
 
   );

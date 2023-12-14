@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import productsData from "../data/Products.JSON";
-import { useShoppingCart } from '../context/ShoppingCartContext';
-
+import productsData from "../../data/Products.JSON";
+// import { useShoppingCart } from '../context/ShoppingCartContext';
+  // const { addToCart } = useShoppingCart();
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const { addToCart } = useShoppingCart();
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,7 +36,7 @@ const ProductList = () => {
               <h2>{product.title}</h2>
               <p>{product.description}</p>
               <p>Price: {product.price}</p>
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
+              {/* <button onClick={() => addToCart(product)}>Add to Cart</button> */}
             </div>
           </div>
         ))}
