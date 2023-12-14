@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/Users/keyinstudent/Documents/S2_Final-Sprint/Semester2-Final-Sprint/sprint/src/server/node_modules
 # testing
 /coverage
 

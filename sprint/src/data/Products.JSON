@@ -5,7 +5,7 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupblue-600x400-1.jpg"
+  "image": "https://freezerlandnfld.com/cdn/shop/files/Purity_Syrup_Blue_Raspberry_1066x.jpg?v=1685879301"
 },
 {
   "id": 2,
@@ -13,7 +13,7 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupraspberry-600x400-1.jpg"
+  "image": "https://freezerlandnfld.com/cdn/shop/files/Purity_Syrup_Raspberry_1066x.jpg?v=1685879301"
 },
 {
   "id": 3,
@@ -21,15 +21,15 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupstrawberry-600x400-1.jpg"
+  "image": "https://freezerlandnfld.com/cdn/shop/files/Purity_Syrup_Strawberry_1066x.jpg?v=1685879296"
 },
 {
   "id": 4,
-  "title": "Purity Syrup: Orange",
+  "title": "Purity Syrup: Orange Creamsicle",
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syruporange-600x400-1.jpg"
+  "image": "https://freezerlandnfld.com/cdn/shop/files/Purity_Syrup_Orange_Creamsicle_1066x.jpg?v=1685879301"
 },
 {
   "id": 5,
@@ -37,7 +37,7 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupcherry-600x400-1.jpg"
+  "image": "https://images.freshop.com/00057858100635/15ea9f275ae2f6417987c2a52369b40e_large.png"
 },
 {
   "id": 6,
@@ -45,7 +45,7 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupfruit-600x400-1.jpg"
+  "image": "https://voila.ca/images-v3/2d92d19c-0354-49c0-8a91-5260ed0bf531/33d0e4f8-7538-4b35-9baa-f1c63c4e5d3c/500x500.jpg"
 },
 {
   "id": 7,
@@ -53,7 +53,7 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syrupicedtea-600x400-1.jpg"
+  "image": "https://purity.nf.ca/wp-content/uploads/2018/02/icedteasyrup.jpg"
 },
 {
   "id": 8,
@@ -61,7 +61,7 @@
   "price": "$5.99",
   "category": "Food & Drink",
   "description": "OUR SYRUPS ARE GREAT FOR EVERYDAY REFRESHMENT OR AS THE STAR INGREDIENT OF YOUR OWN DRINK CREATION. JUST MIX WITH WATER AND ENJOY!",
-  "image": "https://purity.nf.ca/wp-content/uploads/2020/04/product-syruppineapple-600x400-1.jpg"
+  "image": "https://freezerlandnfld.com/cdn/shop/files/Purity_Syrup_Pineapple_535x.jpg?v=1685879301"
 },
 {
   "id": 9,
@@ -815,3 +815,4 @@
   "image": "https://skipperjoessouvenirs.com/cdn/shop/products/image_013a5b1d-bb3a-4c49-9141-9f7d6e28df95_1080x.jpg?v=1633381067"
 }
 ]
+

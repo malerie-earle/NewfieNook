@@ -5,15 +5,13 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Simulating an asynchronous fetch of data from JSON file
     const fetchData = async () => {
       try {
-        // Fetching productsData asynchronously (replace with your actual fetch logic)
         const data = await fetch(productsData);
         const jsonData = await data.json();
 
         if (Array.isArray(jsonData)) {
-          setProducts(jsonData); // Setting fetched data as products
+          setProducts(jsonData);
         } else {
           console.error('Fetched data is not an array.');
         }
