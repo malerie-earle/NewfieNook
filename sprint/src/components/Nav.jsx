@@ -1,4 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
+import { useState } from "react";
+import Cart from "../components/ShoppingCart.jsx";
           {/* I have the Checkout link ready to uncomment once it is active. 
           Was throwing an error for me bc it was an empty link, 
           Love you all <3 especially you ryan*/}
@@ -8,7 +10,13 @@ import { Outlet, Link } from "react-router-dom";
             </div>
           </Link> */}
           // jsx hates comments lol - malerie
+
 const Nav = () => {
+  const [isCartVisible, setCartVisible] = useState(false);
+
+  const handleCartButtonClick = () => {
+    setCartVisible(!isCartVisible);
+  }
   return (
     <>
     <nav>
@@ -33,14 +41,16 @@ const Nav = () => {
             </div>
           </Link>
           <br />
-          <Link to="/cart">
+          {/* <Link to="/cart">
             <div className="navBox">
               <h3>Cart</h3>
             </div>
-          </Link>
+          </Link> */}
+          <button className="navBox" onClick={handleCartButtonClick}>Cart</button>
           <br />
       </div>
       </nav>
+      {isCartVisible && <Cart/>}
       <Outlet />
     </>
   );

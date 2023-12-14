@@ -5,6 +5,7 @@ import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
 import Nav from "../components/Nav.jsx";
 
+
 const Home = () => {
   const [products, setProducts] = useState([]);
 
