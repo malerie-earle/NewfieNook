@@ -34,10 +34,14 @@ body {
 
 
 .newfieNookTitle {
+  display: flex;
   position: absolute;
   top: 0;
-  margin: 0 5%;
-  width: 40vw;
+  margin: 5%;
+  margin-left: 10%;
+  margin-top: 0;
+  width: 45vw;
+  align-items: center;
   
 }
 
@@ -72,11 +76,21 @@ nav {
   display: flex;
   right: 0;
   flex-wrap: nowrap;
+  text-align: right;
+  justify-content: right;
+}
+
+
+h3 {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: right;
 }
 
 
 .navBox {
   display: flex;
   float: left;
-  margin: 0 2%;
+  flex-wrap: nowrap;
+  text-align: right;
 }
