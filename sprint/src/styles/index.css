@@ -15,7 +15,7 @@ body {
   display: flex;
 }
 
-
+/* banner css */
 .banner {
   background-color: #ea9ac2bd;
   border-bottom: 1px solid #FF007F;;
@@ -53,9 +53,9 @@ body {
     0 0 25px 25px rgba(255, 0, 127, 0.2);
 
 }  */
+/* end of banner css */
 
-
-
+/* product list css */
 .productListHTML {
   color: white;
   width: 90%;
@@ -73,8 +73,10 @@ body {
   height: 100%;
   object-fit: cover; 
 }
+/* end of product list css */
 
 
+/* nav css */
 nav {
   margin-left: 5%;
   flex-wrap: nowrap;
@@ -91,7 +93,7 @@ nav {
 }
 
 
-h3 {
+nav h3 {
   display: flex;
   flex-wrap: nowrap;
   text-align: right;
@@ -104,8 +106,10 @@ h3 {
   flex-wrap: nowrap;
   text-align: right;
 }
+/* end of nav css */
 
 
+/* category section css */
 .categories {
   display: flex;
   justify-content: space-evenly;
@@ -144,8 +148,10 @@ h3 {
 .category2 {
   padding: 0 7px;
 }
+/* category section css */
 
 
+/* feature section css */
 .section {
   background-color: #32ba3d60;
   height: fit-content;
@@ -171,3 +177,4 @@ h3 {
   text-align: center;
   margin: 2% auto;
 }
+/* end of feature section css */
