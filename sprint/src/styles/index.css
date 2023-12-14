@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -17,8 +17,8 @@ body {
 
 
 .banner {
-  background-color: #ea9ac269;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.715);
+  background-color: #ea9ac2bd;
+  border-bottom: 1px solid #FF007F;;
   height: 18vh;
   width: 100vw;
 }
@@ -38,12 +38,22 @@ body {
   position: absolute;
   top: 0;
   margin: 5%;
-  margin-left: 10%;
+  margin-left: 13%;
   margin-top: 0;
+  margin-bottom: 7%;
   width: 45vw;
-  align-items: center;
-  
-}
+  align-items: center;}
+  /* border-radius: 50% / 30%; /* Adjust the horizontal and vertical radii 
+  background-color: rgba(255, 0, 127, 1);
+  box-shadow:
+    0 0 5px 5px rgba(255, 0, 127, 0.8),
+    0 0 10px 10px rgba(255, 0, 127, 0.8),
+    0 0 15px 15px rgba(255, 0, 127, 0.6),
+    0 0 20px 20px rgba(255, 0, 127, 0.4),
+    0 0 25px 25px rgba(255, 0, 127, 0.2);
+
+}  */
+
 
 
 .productListHTML {
@@ -93,4 +103,71 @@ h3 {
   float: left;
   flex-wrap: nowrap;
   text-align: right;
+}
+
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: white;
+  border-bottom: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.253);
+  text-align: center;
+  font-size: 30pt;
+  font-weight: 800;
+}
+
+
+.category:hover {
+  background-color: rgb(255, 255, 255);
+  color: #FF007F;
+  font-weight: 900;
+}
+
+
+.category {
+  background-color: rgba(255, 255, 255, 0.523);
+  margin: 0;
+  flex-wrap: nowrap;
+  height: 100%;
+  margin: 0 0.05em;
+  padding: 2px 0;
+  width: 18vw;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  color: #57FF5D;
+}
+
+
+.category2 {
+  padding: 0 7px;
+}
+
+
+.section {
+  background-color: #32ba3d60;
+  height: fit-content;
+  margin: 2%;
+  border-radius: 10px;
+  border: 1px solid #57ff5d94;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.feature {
+  width: 40vw;
+  height: 40vh;
+}
+
+
+.featureTitle {
+  font-size: 25pt;
+  text-align: center;
+  margin: 2% auto;
 }
