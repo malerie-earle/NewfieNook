@@ -1,4 +1,6 @@
-  [
+{
+  "products":
+[
   {"id": 1,
   "title": "Purity Syrup: Blue Raspberry",
   "price": "$5.99",
@@ -814,4 +816,4 @@
   "image": "https://skipperjoessouvenirs.com/cdn/shop/products/image_013a5b1d-bb3a-4c49-9141-9f7d6e28df95_1080x.jpg?v=1633381067"
 }
 ]
-
+}
