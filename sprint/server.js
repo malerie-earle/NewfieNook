@@ -5,6 +5,16 @@ const jsonApp = jsonServer.create();
 const jsonRouter = jsonServer.router('db.json'); 
 const middlewares = jsonServer.defaults();
 
+// Custom route example: returns posts of a specific category
+jsonRouter.render = (req, res) => {
+  const category = req.query.category;
+  if (category) {
+    const data = res.locals.data.filter(post => post.category === category);
+    return res.jsonp(data);
+  }
+  res.jsonp(res.locals.data);
+};
+
 jsonApp.use(middlewares);
 jsonApp.use(jsonRouter);
 
