@@ -4,9 +4,10 @@ import "../styles/index.css";
 import Nav from "../components/Nav.jsx";
 import { useShoppingCart } from '../context/ShoppingCartContext'; 
 import useFetch from "../hooks/useFetch.jsx";
-
+import ProductList from "../components/ProductList.jsx";
 const Home = () => {
-  const { data: products, loading, error } = useFetch('localhost:8080');
+
+
   
 
   return (
@@ -35,8 +36,10 @@ const Home = () => {
         <h1 className = "catTitle">Seasonal</h1>
         </div>
       </div>
-
-      <div className = "section">
+      <div className = "productList">
+      <ProductList />
+      </div>
+      {/* <div className = "section">
       <h1 className = "featureTitle">- Features -</h1><br />
       <div className="features">
         <div className = "feature" id = "feat1"></div>
@@ -44,7 +47,7 @@ const Home = () => {
         <div className = "feature" id = "feat3"></div>
         <div className = "feature" id = "feat4"></div>
         </div>
-        </div>
+        </div> */}
         </div>
 
   );

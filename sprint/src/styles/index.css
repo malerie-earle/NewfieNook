@@ -232,9 +232,17 @@ nav h3 {
 
 
 /* product list css */
+.productList {
+  color: white;
+  width: 90%;
+  height: 100%;
+}
+
+
 .productListHTML {
   color: white;
   width: 90%;
+  height: 100%;
 }
 
 
@@ -247,6 +255,13 @@ nav h3 {
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: contain;
+  margin: 0;
+}
+
+
+.items {
+  margin: 5%;
+  margin-bottom: 15%;
 }
 /* end of product list css */

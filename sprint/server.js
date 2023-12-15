@@ -15,9 +15,15 @@ jsonRouter.render = (req, res) => {
   res.jsonp(res.locals.data);
 };
 
+// Define rewriter rules
+const rewriter = jsonServer.rewriter({
+  '/products':'/', 
+});
+
 jsonApp.use(middlewares);
+jsonApp.use(rewriter); // Add the rewriter middleware before the router
 jsonApp.use(jsonRouter);
 
 jsonApp.listen(jsonPort, () => {
   console.log(`JSON Server running at http://localhost:${jsonPort}`);
-}); 
+});
