@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import ProductList from "../data/Products.JSON"; 
+import ProductList from "../data/Products.json"; 
 import nlcircle from "../images/NLcircle.png";
 import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
 import Nav from "../components/Nav.jsx";
-import { useShoppingCart } from '../context/ShoppingCartContext'; // gonna need this eventually i think
-
-
+import { useShoppingCart } from '../context/ShoppingCartContext'; 
 
 const Home = () => {
   const [products, setProducts] = useState([]);
