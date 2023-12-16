@@ -1,36 +1,54 @@
-import { Outlet, Link } from "react-router-dom";
-import { useState } from "react";
-import Cart from "../components/ShoppingCart.jsx";      
+import React, { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom'; // Import Outlet
+import { useShoppingCart } from '../context/ShoppingCartContext';
+import ShoppingCart from '../components/ShoppingCart.jsx';
+import '../styles/index.css';
 
 const Nav = () => {
+  const { cartItems, removeFromCart } = useShoppingCart();
   const [isCartVisible, setCartVisible] = useState(false);
 
   const handleCartButtonClick = () => {
     setCartVisible(!isCartVisible);
-  }
+  };
+
   return (
     <>
-    <nav>
-      <div className="navBar">
-
+      <nav>
+        <div className="navBar">
           <Link to="/">
             <div className="navBox" id="nav1">
               <h3>Home</h3>
             </div>
           </Link>
           <br />
-
-          <button className="navBox" onClick={handleCartButtonClick}>Cart</button>
-          <br />
-      </div>
+          <div className="navBox button" onClick={handleCartButtonClick}>
+            <h3>Cart </h3>({cartItems.length})
+          </div>
+        </div>
       </nav>
-      {isCartVisible && <Cart/>}
+      {isCartVisible && (
+        <div className="shoppingCartDropdown">
+          <h2>Shopping Cart</h2>
+          <div className="cartItems">
+            {cartItems.map((item) => (
+              <div key={item.id}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <p>Price: {item.price}</p>
+                <button onClick={() => removeFromCart(item.id)}>Remove from Cart</button>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       <Outlet />
     </>
   );
 };
 
 export default Nav;
+
 
  {/* I have the Checkout link ready to uncomment once it is active. 
           Was throwing an error for me bc it was an empty link, 
