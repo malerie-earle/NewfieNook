@@ -15,31 +15,24 @@ const shuffleArray = (array) => {
 const ProductList = () => {
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
   const { addToCart, updateQuantity, cartItems } = useShoppingCart();
-
   const [shuffledProducts, setShuffledProducts] = 
   useState([]);
   const [quantities, setQuantities] = useState({});
   const [showMore, setShowMore] = useState([]);
-  // useEffect(() => {
-  //   if (products) {
-  //     const shuffled = shuffleArray(products);
-  //     setShuffledProducts(shuffled);
-  //     setShowMore(Array(shuffled.length).fill(false));
-  //   }
-  // }, [products]);
+
   useEffect(() => {
     if (products) {
       const shuffled = shuffleArray(products);
-      console.log('Shuffled products:', shuffled); // Log the shuffled products
+      console.log('Shuffled products:', shuffled); 
       setShuffledProducts(shuffled);
       setShowMore(Array(shuffled.length).fill(false));
     }
   }, [products]);
 
  const handleToggleDescription = (index) => {
-    const updatedShowMore = [...showMore];
-    updatedShowMore[index] = !updatedShowMore[index];
-    setShowMore(updatedShowMore);
+    const showMore = [...showMore];
+    showMore[index] = !showMore[index];
+    setShowMore(showMore);
   };
   
 
@@ -77,7 +70,7 @@ const ProductList = () => {
       <>
       <div className="productListHTML">
       <div className="listedProduct">
-        {products.map((product, index) => (
+        {shuffledProducts.map((product, index) => (
           <div className="item" key={product.id}>
             
   
