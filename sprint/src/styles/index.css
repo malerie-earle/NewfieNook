@@ -64,10 +64,11 @@ nav {
 }
 
 
-
 .navBar {
   display: flex;
-  justify-content: flex-end;
+  right: 0;
+  flex-wrap: nowrap;
+  justify-content: right;
   align-items: center;
   background-color: #039F4C;
   height: 5vh;
@@ -91,16 +92,13 @@ nav h3 {
   flex-wrap: nowrap;
   justify-self: center;
   background-color: rgba(255, 255, 255, 0.462);
-  width: 6vw;
-  margin: 5px;
-  border: 1px solid white;
+  width: 7vw;
   height: 35px;
+  border: 1px solid white;
   border-radius: 8px;
 
 }
-.navBox.button:hover {
-  cursor: pointer;
-}
+
 .shoppingCartDropdown {
   position: fixed;
   top: 5vh;
@@ -163,7 +161,7 @@ nav h3 {
   border-radius: 5px 0 0 5px;
   
 }
-/* Add this to your CSS */
+
 .cartItems input {
   width: 50px; /* Adjust the width as needed */
   margin-left: 10px; /* Add margin for spacing */
@@ -229,7 +227,11 @@ nav h3 {
 }
 /* end of nav css */
 
+/* end of nav css */
 
+/* product filter css */
+
+/* end of product filter css */
 /* category section css */
 .categories {
   display: flex;
@@ -244,6 +246,7 @@ nav h3 {
   font-weight: 800;
 }
 
+
 .category {
   background-color: rgba(255, 255, 255, 0.462);
   margin: 0;
@@ -257,6 +260,7 @@ nav h3 {
   border: 1px solid white;
   position: relative; /* Add position relative */
 }
+
 
 .category::before {
   content: '';
@@ -287,6 +291,7 @@ nav h3 {
   padding: 0 7px;
 }
 /* category section css */
+
 
 
 /* feature section css */
@@ -321,25 +326,52 @@ nav h3 {
 /* product list css */
 .productList {
   color: white;
-  width: 100%;
+  width: 95%;
   height: 100%;
-  display: grid;
+  margin: 0 auto;
 }
 
 
 .productListHTML {
-  padding: 20px; /* Add padding to the container */
+  color: white;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #039f4ca6;
+  border-radius: 10px;
+  justify-self: center;
+  padding: 20px;
 }
-
 
 
 .listedProduct {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 0 auto;
+  }
+  
+
+.productImage {
+  display: flex;
   justify-content: center;
-  align-items: center;
 }
+
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: 0;
+  border: 3px solid #039F4C;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+
 .item {
   display: flex;
   flex-direction: column; /* Display child elements in a column */
@@ -353,40 +385,83 @@ nav h3 {
   width: 100%; /* Make sure itemDetails takes the full width */
 }
 
+
+.productTitle {
+  font-weight: 700;
+  font-size: 40;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 5%;
+  height: 7vh;
+  max-height: fit-content;
+  align-items: center;
+  color: white;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+}
+
+
+.productDesc {
+  margin: 2%;
+  text-align: center;
+  height: min-content;
+  font-size: 14pt;
+  margin-top: 10px;
+  padding-top: 10px; /* Add padding for better spacing */
+}
+
+
+.seeMoreBtn {
+  border-radius: 6px;
+  margin: 1%;
+  background-color: rgba(255, 255, 255, 0.701);
+}
+
+
+.productPrice {
+  margin: 3%;
+  margin-left: 5%;
+  text-align: right;
+  
+}
+
+
 .quantityWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
+  margin-right:auto;
+  /* margin-top: 10px; */
+  flex-wrap: nowrap;
+  width: 50%;
 }
 
 .quantityWrapper label {
-  margin-bottom: 5px; /* Adjust the bottom margin as needed */
+  /* margin-bottom: 5px;  */
+  font-size: 12pt;
+  margin-right:auto;
+  margin-top: auto;
 }
 .quantityWrapper input {
-  width: 50px; /* Adjust the width as needed */
+  width: 40px; /* Adjust the width as needed */
   max-width: 100%; /* Set a maximum width */
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
-.image {
-  width: 100%; /* Ensure the image takes the full width of the container */
-  max-height: 200px; /* Adjust the max height as needed */
-}
-  
-button {
+
+
+/* hoping to get the .quantityWrapper and .addCartBtn to both be on the bottom of the item section */
+.addCartBtn {
   cursor: pointer;
-  /* Add any other styling for the button */
-  border: 2px solid #3498db; /* Add a border around the button */
-  padding: 5px 10px; /* Add padding to the button for better appearance */
+  border: 2px solid #039F4C; 
+  font-size: 12pt;
+  margin-left:auto;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+
 }
-  
-.description {
-  margin-top: 10px;
-  border-top: 2px solid #ddd; /* Add a border above the description */
-  padding-top: 10px; /* Add padding for better spacing */
-}
-.price {
-  margin-top: 10px;
-  border-top: 2px solid #ddd; /* Add a border above the price */
-  padding-top: 10px; /* Add padding for better spacing */
-}
+/* end of product list css */
+
