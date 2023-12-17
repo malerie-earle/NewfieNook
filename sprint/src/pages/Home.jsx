@@ -1,12 +1,89 @@
 import nlcircle from "../images/NLcircle.png";
 import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
-import Nav from "../components/Nav.jsx";
-import { useEffect } from 'react'; // Import useEffect from 'react'
+import { useEffect, useState } from 'react'; 
 import useFetch from "../hooks/useFetch.jsx";
 import ProductList from "../components/ProductList.jsx";
+import { useShoppingCart } from '../context/ShoppingCartContext.js';
 
 const Home = () => {
+  const { addToCart, updateQuantity, cartItems } = useShoppingCart();
+  const { data: products, loading, error } = useFetch('http://localhost:8080/products');
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [shuffledProducts, setShuffledProducts] = useState([]);
+  const [sortOrder, setSortOrder] = useState('asc');
+  const [quantities, setQuantities] = useState({});
+  const [showMore, setShowMore] = useState([]);
+
+  useEffect(() => {
+    if (products) {
+      const shuffled = shuffleArray(products);
+      setShuffledProducts(shuffled);
+      setShowMore(Array(shuffled.length).fill(false));
+    }
+  }, [products]);
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category === selectedCategory ? null : category);
+  };
+
+  
+  const shuffleArray = (array) => {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  };
+
+  const sortProducts = () => {
+    let sortedProducts = [...shuffledProducts];
+    
+    // Sort by price
+    sortedProducts = sortedProducts.sort((a, b) => {
+      return sortOrder === 'asc' ? a.price - b.price : b.price - a.price;
+    });
+
+    // Filter by category if selectedCategory is set
+    if (selectedCategory) {
+      sortedProducts = sortedProducts.filter(product => product.category === selectedCategory);
+    }
+
+    setShuffledProducts(sortedProducts);
+    setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+  };
+
+
+  const handleToggleDescription = (index) => {
+    const updatedShowMore = [...showMore];
+    updatedShowMore[index] = !updatedShowMore[index];
+    setShowMore(updatedShowMore);
+  };
+
+  const handleQuantityChange = (product, quantity) => {
+    setQuantities((prevQuantities) => ({ ...prevQuantities, [product.id]: quantity }));
+  };
+
+  const handleAddToCart = (product) => {
+    const quantity = quantities[product.id] || 1;
+    const existingItem = cartItems.find((item) => item.id === product.id);
+
+    if (existingItem) {
+      updateQuantity(product.id, existingItem.quantity + quantity);
+    } else {
+      addToCart({ ...product, quantity });
+    }
+  };
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error.message}</p>;
+  }
+
   const categories = [
     'Bath-and-Body',
     'Clothing',
@@ -15,55 +92,65 @@ const Home = () => {
     'Seasonal'
   ];
 
-  useEffect(() => {
-    categories.forEach((category, index) => {
-      fetch(`http://localhost:8080?category=${category}`)
-        .then(response => response.json())
-        .then(data => {
-          console.log(`Category ${index + 1} Data:`, data);
-          // Do something with the fetched data for each category
-        })
-        .catch(error => {
-          console.error(`Error fetching category ${index + 1} data:`, error);
-        });
-    });
-  }, [categories]);
 
-  return (
-    <div className="home">
-      <div className="banner">
+
+    
+return (
+  <div className="home">
+
+     <div className="banner">
         <img src={nlcircle} alt="NL Circle" className="nlCircle" />
         <img src={newfieNook} alt="Newfie Nook Title" className="newfieNookTitle" />
       </div>
-      <div className="categories">
-        <div className="category2" id="title">
-          Categories:
-        </div>
+
+    <div className="categories">
+      <h2>Category:</h2>
         {categories.map((category, index) => (
-          <div className="category" key={index} id={`cat${index + 1}`}>
-            <a href={`#cat${index + 1}`} className="category-link">
-              <h1 className="catTitle">{category}</h1>
-            </a>
+          <p key={index}>
+            <button onClick={() => handleCategoryChange(category)}>
+              {category}
+            </button>
+          </p>
+        ))}
+        <p>
+          <button onClick={() => handleCategoryChange(null)}>Show All</button>
+        </p>
+    </div>
+
+    <div className="productList">
+      <button onClick={sortProducts}>Sort Products</button>
+      <div className="listedProduct">
+        {shuffledProducts.map((product, index) => (
+          
+          // Card for Product
+          <div className="item" key={product.id}>
+            <h3>{product.title}</h3>
+            <div className="productImage">
+                <img src={product.image} alt={product.title} />
+              </div>
+            <p>Category: {product.category}</p>
+            <p>${product.price}</p>
+            <div className="productDetails">
+              
+              <div className="productActions">
+                <label>
+                  Qty:
+                  <input
+                    type="number"
+                    min="1"
+                    value={quantities[product.id] || 1}
+                    onChange={(e) => handleQuantityChange(product, parseInt(e.target.value, 10))}
+                  />
+                </label>
+                <button onClick={() => handleAddToCart(product)}>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
           </div>
         ))}
       </div>
-      <div className="productList">
-        <ProductList />
-      </div>
     </div>
-  );
-};
-
+  </div>
+)};
 export default Home;
-
-   
-      {/* <div className = "section">
-      <h1 className = "featureTitle">- Features -</h1><br />
-      <div className="features">
-        <div className = "feature" id = "feat1"></div>
-        <div className = "feature" id = "feat2"></div>
-        <div className = "feature" id = "feat3"></div>
-        <div className = "feature" id = "feat4"></div>
-        </div>
-        </div> */}
-
