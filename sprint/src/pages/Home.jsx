@@ -2,13 +2,32 @@ import nlcircle from "../images/NLcircle.png";
 import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
 import Nav from "../components/Nav.jsx";
-import { useShoppingCart } from '../context/ShoppingCartContext'; 
+import { useEffect } from 'react'; // Import useEffect from 'react'
 import useFetch from "../hooks/useFetch.jsx";
 import ProductList from "../components/ProductList.jsx";
+
 const Home = () => {
+  const categories = [
+    'Bath-and-Body',
+    'Clothing',
+    'Food-and-Drink',
+    'Merchandise',
+    'Seasonal'
+  ];
 
-
-  
+  useEffect(() => {
+    categories.forEach((category, index) => {
+      fetch(`http://localhost:8080?category=${category}`)
+        .then(response => response.json())
+        .then(data => {
+          console.log(`Category ${index + 1} Data:`, data);
+          // Do something with the fetched data for each category
+        })
+        .catch(error => {
+          console.error(`Error fetching category ${index + 1} data:`, error);
+        });
+    });
+  }, [categories]);
 
   return (
     <div className="home">
@@ -16,29 +35,28 @@ const Home = () => {
         <img src={nlcircle} alt="NL Circle" className="nlCircle" />
         <img src={newfieNook} alt="Newfie Nook Title" className="newfieNookTitle" />
       </div>
-      <div className = "categories">
-        <div className = "category2" id = "title">
+      <div className="categories">
+        <div className="category2" id="title">
           Categories:
         </div>
-        <div className = "category" id = "cat1">
-          <h1 className = "catTitle">Bath & Body</h1>
-        </div>
-        <div className = "category" id = "cat2">
-        <h1 className = "catTitle">Clothing</h1>
-        </div>
-        <div className = "category" id = "cat3">
-        <h1 className = "catTitle">Food & Drink</h1>
-        </div>
-        <div className = "category" id = "cat4">
-        <h1 className = "catTitle">Merchandise</h1>
-        </div>
-        <div className = "category" id = "cat5">
-        <h1 className = "catTitle">Seasonal</h1>
-        </div>
+        {categories.map((category, index) => (
+          <div className="category" key={index} id={`cat${index + 1}`}>
+            <a href={`#cat${index + 1}`} className="category-link">
+              <h1 className="catTitle">{category}</h1>
+            </a>
+          </div>
+        ))}
       </div>
-      <div className = "productList">
-      <ProductList />
+      <div className="productList">
+        <ProductList />
       </div>
+    </div>
+  );
+};
+
+export default Home;
+
+   
       {/* <div className = "section">
       <h1 className = "featureTitle">- Features -</h1><br />
       <div className="features">
@@ -48,9 +66,4 @@ const Home = () => {
         <div className = "feature" id = "feat4"></div>
         </div>
         </div> */}
-        </div>
 
-  );
-};
-
-export default Home;
