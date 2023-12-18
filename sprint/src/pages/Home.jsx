@@ -1,5 +1,3 @@
-import nlcircle from "../images/NLcircle.png";
-import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
 import { useEffect, useState } from 'react'; 
 import useFetch from "../hooks/useFetch.jsx";
@@ -8,7 +6,7 @@ import addCartIcon from "../images/addCart.png";
 
 const Home = () => {
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
-  // const [displayedProducts, setDisplaProducts] = useState([]);
+  const [displayedProducts, setDisplaProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState('asc');
@@ -24,7 +22,7 @@ const Home = () => {
       setShuffledProducts(shuffled);
     }
   }, [products]);
-  // setDisplaProducts(shuffledProducts);
+  setDisplaProducts(shuffledProducts);
   
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
