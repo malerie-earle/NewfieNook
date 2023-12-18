@@ -21,8 +21,11 @@ const Home = () => {
       setShuffledProducts(shuffled);
     }
   }, [products]);
-  setDisplaProducts(shuffledProducts);
-  
+
+  useEffect(() => {
+    setDisplaProducts(shuffledProducts);
+  }, [shuffledProducts]);
+
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -96,7 +99,7 @@ const Home = () => {
     <>
       <div className="productList">
         <div className="listedProduct">
-          {shuffledProducts.map((product, index) => (
+          {displayedProducts.map((product, index) => (
             // Card for Product
             <div className="item" key={product.id}>
               <div className="productTitle">
@@ -150,4 +153,5 @@ const Home = () => {
     </>
   );
 };
+
 export default Home;
