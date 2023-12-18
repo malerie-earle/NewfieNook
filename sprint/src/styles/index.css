@@ -25,16 +25,34 @@ body {
 
 /* banner css */
 .banner {
-  background-color: #ea9ac2bd;
+  background-color: #ea9ac272;
   border-bottom: 2px solid #FF007Fb2;
   border-top: 2px solid #ff0080b2;
   height: 18vh;
   width: 100vw;
-  z-index: 99;
-  margin-top: 5vh;
+  z-index: 5;
   position: fixed;
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
+}
+
+
+.nlPic {
+  height: 18vh;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+  top: 5vh;
+  right: 0;
+  z-index: 1; 
+  background-image: url("../images/nlBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
 }
 
 
@@ -59,7 +77,7 @@ body {
   margin-left: 8%;
   margin-top:  0;
   margin-bottom: 7%;
-  width: 47vw;
+  width: 45vw;
   height: auto;
   align-items: center;
   justify-content: flex-start;
@@ -282,7 +300,7 @@ nav h3 {
   flex-wrap: nowrap;
   color: white;
   border-bottom: 2px solid #ff0080b2;
-  background-color: rgba(255, 255, 255, 0.634);
+  background-color: #ea9ac2;
   text-align: center;
   font-size: 30pt;
   font-weight: 800;
@@ -295,9 +313,14 @@ nav h3 {
 }
 
 
+.categoryBar {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .categories h2 {
   padding: 5px;
-  color: rgba(0, 0, 0, 0.353);
+  color: white;
 }
 
 .category {
@@ -321,6 +344,9 @@ nav h3 {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.636);
   z-index: 999;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 
@@ -517,6 +543,7 @@ nav h3 {
   cursor: pointer;
   z-index: 20;
   background-color: none;
+  
 }
 
 /* end of product list css */

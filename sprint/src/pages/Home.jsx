@@ -93,36 +93,6 @@ const Home = () => {
 
 return (
   <>
-  {/* <div className="home">
-
-     <div className="banner">
-        <img src={nlcircle} alt="NL Circle" className="nlCircle" />
-        <img src={newfieNook} alt="Newfie Nook Title" className="newfieNookTitle" />
-      </div>
-
-<div className = "categories">
-  <h2>Categories:</h2>
-<div className = "category"> 
-      {categories.map((category, index) => (
- <p key={index}>
-    <button
-      key={index}
-      className={selectedCategory === category ? 'selected' : ''}
-      onClick={() => handleCategoryToggle(category)}
-    >
-      {category}
-    </button>
-  </p>
-))}
-<button onClick={() => setSelectedCategory(null)}>Show All</button>
-
-<div className = "sortBy">
-<p className = "sortBy">Sort By : </p>
-<button className = "sortBtn" onClick={sortProducts}>Price (High to Low)</button><p></p>
-</div>
-</div>
-    </div>
-    </div> */}
     <div className="productList">
       
       <div className="listedProduct">

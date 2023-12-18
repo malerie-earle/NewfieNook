@@ -132,9 +132,11 @@ const Nav = () => {
       )}
       <div className="home">
 
+<div className = "nlPic">
 <div className="banner">
    <img src={nlcircle} alt="NL Circle" className="nlCircle" />
    <img src={newfieNook} alt="Newfie Nook Title" className="newfieNookTitle" />
+ </div>
  </div>
 
 <div className = "categories">
@@ -144,7 +146,7 @@ const Nav = () => {
 <p key={index}>
 <button
  key={index}
- className={selectedCategory === category ? 'selected' : ''}
+ className= "categoryBar"
  onClick={() => handleCategoryToggle(category)}
 >
  {category}
