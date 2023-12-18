@@ -53,6 +53,7 @@ const ShoppingCart = () => {
                         id={`quantity-${item.id}`}
                         value={item.quantity}
                         min="1"
+                        data-testid={`quantity-input-${item.id}`} // test wanted this. Remove if error occurs.
                         onChange={(e) => handleQuantityChange(item.id, parseInt(e.target.value, 10))}
                       />
                       <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
