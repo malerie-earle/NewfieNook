@@ -3,31 +3,27 @@ import newfieNook from "../images/newfienook2.png";
 import "../styles/index.css";
 import { useEffect, useState } from 'react'; 
 import useFetch from "../hooks/useFetch.jsx";
-import ProductList from "../components/ProductList.jsx";
 import { useShoppingCart } from '../context/ShoppingCartContext.js';
-
+import addCartIcon from "../images/addCart.png";
 const Home = () => {
   const { addToCart, updateQuantity, cartItems } = useShoppingCart();
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState('asc');
-  const [quantities, setQuantities] = useState({});
-  const [showMore, setShowMore] = useState([]);
+  const [sortButtonText, setSortButtonText] = useState('Price (Low to High)');
 
+  const [quantities, setQuantities] = useState({});
+  let sortedProducts = [];
+
+  // Shuffle products every render
   useEffect(() => {
     if (products) {
       const shuffled = shuffleArray(products);
       setShuffledProducts(shuffled);
-      setShowMore(Array(shuffled.length).fill(false));
     }
   }, [products]);
 
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category === selectedCategory ? null : category);
-  };
-
-  
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -37,29 +33,31 @@ const Home = () => {
     return shuffledArray;
   };
 
+
   const sortProducts = () => {
-    let sortedProducts = [...shuffledProducts];
-    
+    let sortedProducts = [...products]; // Using the original products for sorting
+  
     // Sort by price
     sortedProducts = sortedProducts.sort((a, b) => {
       return sortOrder === 'asc' ? a.price - b.price : b.price - a.price;
     });
-
+  
     // Filter by category if selectedCategory is set
     if (selectedCategory) {
       sortedProducts = sortedProducts.filter(product => product.category === selectedCategory);
     }
-
+  
     setShuffledProducts(sortedProducts);
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    setSortButtonText(sortOrder === 'asc' ? 'Price (High to Low)' : 'Price (Low to High)');
   };
-
-
-  const handleToggleDescription = (index) => {
-    const updatedShowMore = [...showMore];
-    updatedShowMore[index] = !updatedShowMore[index];
-    setShowMore(updatedShowMore);
-  };
+  
+    
+  
+    const handleCategoryToggle = (category) => {
+      setSelectedCategory(selectedCategory === category ? null : category);
+    };
+    
 
   const handleQuantityChange = (product, quantity) => {
     setQuantities((prevQuantities) => ({ ...prevQuantities, [product.id]: quantity }));
@@ -93,64 +91,79 @@ const Home = () => {
   ];
 
 
-
-    
 return (
-  <div className="home">
+  <>
+  {/* <div className="home">
 
      <div className="banner">
         <img src={nlcircle} alt="NL Circle" className="nlCircle" />
         <img src={newfieNook} alt="Newfie Nook Title" className="newfieNookTitle" />
       </div>
 
-    <div className="categories">
-      <h2>Category:</h2>
-        {categories.map((category, index) => (
-          <p key={index}>
-            <button onClick={() => handleCategoryChange(category)}>
-              {category}
-            </button>
-          </p>
-        ))}
-        <p>
-          <button onClick={() => handleCategoryChange(null)}>Show All</button>
-        </p>
-    </div>
+<div className = "categories">
+  <h2>Categories:</h2>
+<div className = "category"> 
+      {categories.map((category, index) => (
+ <p key={index}>
+    <button
+      key={index}
+      className={selectedCategory === category ? 'selected' : ''}
+      onClick={() => handleCategoryToggle(category)}
+    >
+      {category}
+    </button>
+  </p>
+))}
+<button onClick={() => setSelectedCategory(null)}>Show All</button>
 
+<div className = "sortBy">
+<p className = "sortBy">Sort By : </p>
+<button className = "sortBtn" onClick={sortProducts}>Price (High to Low)</button><p></p>
+</div>
+</div>
+    </div>
+    </div> */}
     <div className="productList">
-      <button onClick={sortProducts}>Sort Products</button>
+      
       <div className="listedProduct">
-        {shuffledProducts.map((product, index) => (
+      {shuffledProducts.map((product, index) => (
           
           // Card for Product
           <div className="item" key={product.id}>
-            <h3>{product.title}</h3>
+
+            <div className="productTitle">
+            <h3 className = "h3Title">{product.title}</h3>
+            </div>
+
             <div className="productImage">
-                <img src={product.image} alt={product.title} />
+                <img src={product.image} alt={product.title} className = "image"/>
               </div>
-            <p>Category: {product.category}</p>
-            <p>${product.price}</p>
+
+            <p className="productPrice">${product.price}</p>
             <div className="productDetails">
               
-              <div className="productActions">
-                <label>
-                  Qty:
-                  <input
-                    type="number"
-                    min="1"
-                    value={quantities[product.id] || 1}
-                    onChange={(e) => handleQuantityChange(product, parseInt(e.target.value, 10))}
-                  />
-                </label>
-                <button onClick={() => handleAddToCart(product)}>
-                  Add to Cart
-                </button>
-              </div>
+             <div className="productActions">
+  <label>
+     Qty:
+    <input
+      className="qtyInput"
+      type="number"
+      min="1"
+      value={quantities[product.id] || 1}
+      onChange={(e) => handleQuantityChange(product, parseInt(e.target.value, 10))}
+    />
+  </label>
+  <div className="addCartBtn"> 
+  <button className="addCartBtn" onClick={() => handleAddToCart(product)}>
+    <img src={addCartIcon} alt="Add to Cart" className="addCartIcon" />
+    </button>
+  </div>
+</div>
             </div>
           </div>
         ))}
       </div>
     </div>
-  </div>
+</>
 )};
 export default Home;

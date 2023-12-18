@@ -27,6 +27,7 @@ const Checkout = ({ onBackToCart }) => {
   };
 
   return (
+    <div className = "homeCheckout">
     <div className="checkout">
       <h2>Checkout</h2>
       <div className="totalPrice">
@@ -44,6 +45,7 @@ const Checkout = ({ onBackToCart }) => {
         </button>
       </form>
       <button onClick={onBackToCart}>Back to Cart</button>
+    </div>
     </div>
   );
 };

@@ -11,9 +11,17 @@
 body {
   background-color: #1e1e1e;
   height: 100%;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
   width: 100%;
   display: flex;
+  justify-content: flex-start;
 }
+
 
 /* banner css */
 .banner {
@@ -22,6 +30,11 @@ body {
   border-top: 2px solid #ff0080b2;
   height: 18vh;
   width: 100vw;
+  z-index: 99;
+  margin-top: 5vh;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
@@ -30,7 +43,10 @@ body {
   height: 20vh;
   margin: 2%;
   margin-top: 0;
-  margin-right: 0;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 
@@ -39,12 +55,15 @@ body {
   position: absolute;
   top: 0;
   padding: 3%;
-  margin: 5%;
-  margin-left: 13%;
-  margin-top: 0;
+  padding-top: 0;
+  margin-left: 8%;
+  margin-top:  0;
   margin-bottom: 7%;
-  width: 45vw;
-  align-items: center;}
+  width: 47vw;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+}
   /* border-radius: 50% / 30%; /* Adjust the horizontal and vertical radii 
   background-color: rgba(255, 0, 127, 1);
   box-shadow:
@@ -61,6 +80,10 @@ body {
 /* nav css */
 nav {
   flex-wrap: nowrap;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: flex;
 }
 
 
@@ -73,6 +96,7 @@ nav {
   background-color: #039F4C;
   height: 5vh;
   width: 100%;
+  z-index: 99;
 }
 
 
@@ -91,13 +115,31 @@ nav h3 {
   float: left;
   flex-wrap: nowrap;
   justify-self: center;
-  background-color: rgba(255, 255, 255, 0.462);
   width: 7vw;
   height: 35px;
-  border: 1px solid white;
   border-radius: 8px;
 
 }
+
+
+.homeIcon {
+  filter: invert(1); /* Inverts the color of the icon */
+  cursor: pointer;
+}
+
+
+.cartIcon {
+  filter: invert(1); /* Inverts the color of the icon */
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+.checkoutIcon {
+  filter: invert(1); /* Inverts the color of the icon */
+  cursor: pointer;
+}
+
 
 .shoppingCartDropdown {
   position: fixed;
@@ -231,84 +273,106 @@ nav h3 {
 /* end of nav css */
 
 
-/* product filter css */
 
-/* end of product filter css */
 /* category section css */
 .categories {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   color: white;
-  border-bottom: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.536);
+  border-bottom: 2px solid #ff0080b2;
+  background-color: rgba(255, 255, 255, 0.634);
   text-align: center;
   font-size: 30pt;
   font-weight: 800;
+  height: 7vh;
+  width: 100%;
+  padding: 1%;
+  z-index: 999;
+  position: fixed;
+  margin-top: 23vh;
 }
 
 
+.categories h2 {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.353);
+}
+
 .category {
-  background-color: rgba(255, 255, 255, 0.462);
-  margin: 0;
   flex-wrap: nowrap;
-  height: 10vh;
-  margin: 0 0.05em;
-  width: 18vw;
+  height: 7vh;
+  margin: 0 4%;
+  width: 100%;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
   color: #57FF5D;
-  border: 1px solid white;
-  position: relative; /* Add position relative */
-}
-
-
-.category::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 0, 127, 0.5); /* Adjust the color as needed */
-  opacity: 0;
-  pointer-events: none;
+  position: relative; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 8px;
   transition: opacity 0.3s ease;
 }
 
-.category:hover::before {
-  opacity: 1;
+
+.category button {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.636);
+  z-index: 999;
 }
 
-.category:hover {
-  background-color: rgb(255, 255, 255);
-  color: #FF007F;
+
+.category button:hover {
+  background-color: #FF007Fb2;;
+  color: white;
   font-weight: 900;
   cursor: pointer;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  border: 1px solid #57FF5D;
 }
 
 
-.category2 {
-  padding: 0 7px;
+
+.sortBy {
+  margin-left: auto;
+  display: flex;
+  justify-content: end;  
 }
+
+
+.sortBy p {
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.353);
+  display: flex;
+  align-items: center;
+}
+
+
+.sortBtn {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
 /* end of category section css */
 
 
 
 /* product list css */
 .productList {
-  color: white;
-  width: 95vw;
-  height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
+  color: white;
+  width: 98%;
+  height: 100%;
   margin: 0 auto;
-  background-color: #039f4ca6;
-  border-radius: 10px;
-  justify-self: center;
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.653);
+  padding: 10px;
+  margin-top: 30vh;
 }
 
 
@@ -317,12 +381,20 @@ nav h3 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin: 0 auto;
+  justify-content: center;
+  flex-direction: column; 
+  width: 80%;
+  height: auto;
   }
   
 
 .productImage {
   display: flex;
   justify-content: center;
+  height: auto;
+  width: 19vw;
+  margin: 0 auto;
+  max-height: 25vh;
 }
 
 
@@ -330,52 +402,56 @@ nav h3 {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  margin: 0;
-  border: 3px solid #039F4C;
+  margin: 0 auto;
+  border: 3px solid #03753cb7;
   display: flex;
   justify-content: center;
-  justify-self: center;
+  
 }
 
 
 .item {
   display: flex;
-  flex-direction: column; /* Display child elements in a column */
-  align-items: center;
-  justify-content: space-aro;
+  align-items: top;
+  justify-content: center;
   height: 100%;
-  border: 2px solid #ddd;
+  width: 100%;
+  border: 2px solid #017236;
   padding: 10px;
+  flex-direction: column;
+  background-color: #039f4cbd;
+  border-radius: 10px;
+
 }
 .itemDetails {
+  display: flex;
   width: 100%; /* Make sure itemDetails takes the full width */
 }
 
 
 .productTitle {
-  font-weight: 700;
-  font-size: 40;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 1%;
-  margin-bottom: 5%;
-  height: 7vh;
-  max-height: fit-content;
+  height: 10vh;
+  max-height: max-content;
   align-items: center;
-  color: white;
-  -webkit-text-stroke-width: 0.75px;
-  -webkit-text-stroke-color: black;
+  margin: 5% auto;
+
 }
 
 
-.productDesc {
-  margin: 2%;
+.h3Title {
+  color: white;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+  font-weight: 700;
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: min-content;
-  font-size: 14pt;
-  margin-top: 10px;
-  padding-top: 10px; /* Add padding for better spacing */
+  height: 10vh;
 }
 
 
@@ -383,9 +459,19 @@ nav h3 {
   margin: 3%;
   margin-left: 5%;
   text-align: right;
-  
+  margin-left: auto;
 }
 
+
+.productActions {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.productActions button {
+  background-color: none;
+}
 
 .quantityWrapper {
   display: flex;
@@ -399,28 +485,56 @@ nav h3 {
 .quantityWrapper label {
   /* margin-bottom: 5px;  */
   font-size: 12pt;
-  margin-right:auto;
-  margin-top: auto;
-}
-.quantityWrapper input {
-  width: 40px; /* Adjust the width as needed */
-  max-width: 100%; /* Set a maximum width */
-  /* margin-top: 5px; */
+  margin-left: 10px;
 }
 
 
-/* hoping to get the .quantityWrapper and .addCartBtn to both be on the bottom of the item section */
+.qtyInput {
+  width: 3vw;
+  height: 4vh;
+  border: 1px solid #03753c;
+  border-radius: 8px;
+  text-align: end;
+  margin-left: 10px;
+}
+
 .addCartBtn {
   cursor: pointer;
-  border: 2px solid #039F4C; 
   font-size: 12pt;
   margin-left:auto;
-  border-radius: 8px;
-  width: 50%;
+  width: fit-content;
   display: flex;
   justify-content: flex-end;
-  padding: 5px;
-
+  padding: 3px;
+  background-color: transparent;
+  border: none;
 }
+
+.addCartIcon {
+  filter: invert(1); /* Inverts the color of the icon */
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 20;
+  background-color: none;
+}
+
 /* end of product list css */
 
+/* checkout css */
+.homeCheckout {
+  width: 100%;
+  margin: 0;
+  margin-left: - 10vw;
+}
+
+
+.checkout {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30vh;
+  height: min-content;
+  width: 100%;
+  margin-left: -10vw;
+  background-color: rgba(255, 255, 255, 0.51);
+}
