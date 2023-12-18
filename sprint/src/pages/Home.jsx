@@ -5,16 +5,17 @@ import { useEffect, useState } from 'react';
 import useFetch from "../hooks/useFetch.jsx";
 import { useShoppingCart } from '../context/ShoppingCartContext.js';
 import addCartIcon from "../images/addCart.png";
+
 const Home = () => {
-  const { addToCart, updateQuantity, cartItems } = useShoppingCart();
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
+  // const [displayedProducts, setDisplaProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState('asc');
   const [sortButtonText, setSortButtonText] = useState('Price (Low to High)');
-
+  const { addToCart, updateQuantity, cartItems } = useShoppingCart();
   const [quantities, setQuantities] = useState({});
-  let sortedProducts = [];
+
 
   // Shuffle products every render
   useEffect(() => {
@@ -23,7 +24,8 @@ const Home = () => {
       setShuffledProducts(shuffled);
     }
   }, [products]);
-
+  // setDisplaProducts(shuffledProducts);
+  
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -63,6 +65,7 @@ const Home = () => {
     setQuantities((prevQuantities) => ({ ...prevQuantities, [product.id]: quantity }));
   };
 
+
   const handleAddToCart = (product) => {
     const quantity = quantities[product.id] || 1;
     const existingItem = cartItems.find((item) => item.id === product.id);
@@ -73,6 +76,9 @@ const Home = () => {
       addToCart({ ...product, quantity });
     }
   };
+  
+  
+  
 
   if (loading) {
     return <p>Loading...</p>;
@@ -81,14 +87,6 @@ const Home = () => {
   if (error) {
     return <p>Error: {error.message}</p>;
   }
-
-  const categories = [
-    'Bath-and-Body',
-    'Clothing',
-    'Food-and-Drink',
-    'Merchandise',
-    'Seasonal'
-  ];
 
 
 return (

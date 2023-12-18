@@ -57,8 +57,8 @@ body {
 
 
 .nlCircle {
-  width: 20vvw;
-  height: 20vh;
+  width: auto;
+  height: 10vh;
   margin: 2%;
   margin-top: 0;
   margin-right: auto;
@@ -146,13 +146,6 @@ nav h3 {
 }
 
 
-.cartIcon {
-  filter: invert(1); /* Inverts the color of the icon */
-  width: fit-content;
-  cursor: pointer;
-}
-
-
 .checkoutIcon {
   filter: invert(1); /* Inverts the color of the icon */
   cursor: pointer;
@@ -167,7 +160,7 @@ nav h3 {
   height: auto;
   background-color: #fff;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  z-index: 10000;
   overflow: hidden;
   transition: right 0.3s ease-in-out;
   border-radius: 8px;
@@ -216,14 +209,7 @@ nav h3 {
 .cartItems button:hover {
   background-color: #d60073;
 }
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  
-}
+
 
 .cartItems input {
   width: 50px; /* Adjust the width as needed */
@@ -240,35 +226,6 @@ nav h3 {
   margin-top: 10px;
 }
 
-.searchTerm {
-  height: 5%;
-  outline: black;
-  color: #9DBFAF;
-  border-radius: 0;
-}
-
-.searchTerm:focus{
-  color: black;
-}
-
-.searchTerm::placeholder {
-  color:  #e94ec7;
-}
-
-.searchButton {
-  width: 30px;
-  height: 25px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 10px;
-  position: flex;
-  margin-top: 7px;
-  
-}
 
 .wrap{
   width: 10%;
@@ -281,13 +238,6 @@ nav h3 {
   
 }
 
-#searchIcon {
-  height: 10px;
-  width: 11px;
-  display: flex;
-  border: 1px solid #00B4CC;
-  
-}
 /* end of nav css */
 
 
@@ -300,11 +250,11 @@ nav h3 {
   flex-wrap: nowrap;
   color: white;
   border-bottom: 2px solid #ff0080b2;
-  background-color: #ea9ac2;
+  background-color: 1e1e1e;
   text-align: center;
   font-size: 30pt;
   font-weight: 800;
-  height: 7vh;
+  height: 5vh;
   width: 100%;
   padding: 1%;
   z-index: 999;
@@ -316,6 +266,9 @@ nav h3 {
 .categoryBar {
   display: flex;
   flex-wrap: nowrap;
+  background-color: #ff0080fa;
+  z-index: 999;
+  width: 95vw;
 }
 
 .categories h2 {
@@ -337,21 +290,26 @@ nav h3 {
   align-items: center;
   border-radius: 8px;
   transition: opacity 0.3s ease;
+  background-color: #ff0080;
 }
 
 
 .category button {
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.636);
+  background-color: rgba(255, 255, 255, 0.778);
   z-index: 999;
   cursor: pointer;
   display: flex;
   flex-wrap: nowrap;
+  width: max-content;
+  height: 5.5vh;
+  padding: 10px;
+  align-items: center;
 }
 
 
 .category button:hover {
-  background-color: #FF007Fb2;;
+  background-color: #ff008090;
   color: white;
   font-weight: 900;
   cursor: pointer;
@@ -499,6 +457,7 @@ nav h3 {
   background-color: none;
 }
 
+
 .quantityWrapper {
   display: flex;
   flex-direction: column;
@@ -536,12 +495,24 @@ nav h3 {
   border: none;
 }
 
-.addCartIcon {
+/* regular cart icon */
+.cartIcon {
   filter: invert(1); /* Inverts the color of the icon */
   width: 35px;
   height: 35px;
   cursor: pointer;
   z-index: 20;
+  background-color: none;
+}
+
+
+/* add cart icon */
+.addCartIcon {
+  filter: invert(1); /* Inverts the color of the icon */
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 0;
   background-color: none;
   
 }
