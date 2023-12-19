@@ -25,7 +25,7 @@ body {
 
 /* banner css */
 .banner {
-  background-color: #ea9ac272;
+  background-color: #ea9ac29c;
   border-bottom: 2px solid #FF007Fb2;
   border-top: 2px solid #ff0080b2;
   height: 18vh;
@@ -57,14 +57,14 @@ body {
 
 
 .nlCircle {
-  width: auto;
-  height: 12vh;
-  margin: 2%;
-  margin-top: 0;
-  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: left;
+  width: auto;
+  height: 15vh;
+  margin: 1%;
+  margin-right: auto;
+  
 }
 
 
@@ -112,7 +112,7 @@ nav {
   justify-content: right;
   align-items: center;
   background-color: #039F4C;
-  height: 5vh;
+  height: 5.5vh;
   width: 100%;
   z-index: 99;
 }
@@ -139,17 +139,31 @@ nav h3 {
 
 }
 
-
-.homeIcon {
+/* icon css */
+.icon {
+  display: flex;
+  justify-content: end;
+  height: 80%;
+  width: auto;
   filter: invert(1); /* Inverts the color of the icon */
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 20;
 }
 
 
-.checkoutIcon {
-  filter: invert(1); /* Inverts the color of the icon */
-  cursor: pointer;
+#addCartIcon {
+  height: 35px;
+  width: auto;
 }
+/* icon ids 
+#homeIcon
+#cartIcon
+#addCartIcon
+#checkoutIcon */
+
+/* end of icon css */
 
 
 .shoppingCartDropdown {
@@ -252,7 +266,7 @@ nav h3 {
   border-bottom: 2px solid #ff0080b2;
   background-color: 1e1e1e;
   text-align: center;
-  font-size: 30pt;
+  font-size: 25pt;
   font-weight: 800;
   height: 5vh;
   width: 100%;
@@ -264,8 +278,9 @@ nav h3 {
 
 
 .categories h2 {
-  padding: 5px;
+  padding: 2%;
   color: white;
+  width: fit-content;
 }
 
 .category {
@@ -273,7 +288,7 @@ nav h3 {
   height: 5vh;
   width:100%;
   margin: 0;
-  padding: 0 10%;
+  padding: 0 3%;
   position: relative; 
   display: flex;
   align-items: center;
@@ -291,8 +306,9 @@ nav h3 {
   display: flex;
   flex-wrap: nowrap;
   width: max-content;
-  height: 5.5vh;
-  padding: 10px;
+  height: 5vh;
+  padding: 0 3%;
+  margin: 0 10px;
   align-items: center;
 }
 
@@ -307,7 +323,14 @@ nav h3 {
   border: 1px solid #57FF5D;
 }
 
+/* .categoryBar {
 
+} */
+
+.categoryBarSelect {
+  color:#03753c;
+  font-weight: 700;
+}
 
 .sortBy {
   margin-left: auto;
@@ -316,19 +339,41 @@ nav h3 {
 }
 
 
-.sortBy p {
-  margin-right: 5px;
-  color: rgba(0, 0, 0, 0.353);
+.sortBy h2 {
+  color: white;
+  height: 5vh;
+  width: auto;
   display: flex;
   align-items: center;
+  font-size: 15pt;
 }
 
 
-.sortBtn {
+.sortBtn button {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.778);
+  z-index: 999;
   cursor: pointer;
   display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
+  flex-wrap: nowrap;
+  height: 4.75vh;
+  width: auto;
+  padding: 1%;
+  align-items: center;
+  font-size: 15pt;
+}
+
+
+.showAllBtn {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.778);
+  z-index: 999;
+  cursor: pointer;
+  display: flex;
+  width: min-content;
+  height: 4.75vh;
+  align-items: center;
+  padding: 3px;
 }
 
 /* end of category section css */
@@ -341,7 +386,7 @@ nav h3 {
   justify-content: center;
   color: white;
   width: 98%;
-  height: 100%;
+  height: fit-content;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.653);
   padding: 10px;
@@ -482,28 +527,6 @@ nav h3 {
   padding: 3px;
   background-color: transparent;
   border: none;
-}
-
-/* regular cart icon */
-.cartIcon {
-  filter: invert(1); /* Inverts the color of the icon */
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  z-index: 20;
-  background-color: none;
-}
-
-
-/* add cart icon */
-.addCartIcon {
-  filter: invert(1); /* Inverts the color of the icon */
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  z-index: 0;
-  background-color: none;
-  
 }
 
 /* end of product list css */

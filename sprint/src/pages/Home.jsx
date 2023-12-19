@@ -6,9 +6,10 @@ import addCartIcon from "../images/addCart.png";
 
 const Home = () => {
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
-  const [displayedProducts, setDisplaProducts] = useState([]);
+  const [displayedProducts, setDisplayedProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [shuffledProducts, setShuffledProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState("asc");
   const [sortButtonText, setSortButtonText] = useState("Price (Low to High)");
   const { addToCart, updateQuantity, cartItems } = useShoppingCart();
@@ -16,7 +17,6 @@ const Home = () => {
   const [showAddedToCartAlert, setShowAddedToCartAlert] = useState(false);
   const chimeSound = new Audio('/AddtoCart.mp3');
   const categories = [
-    'Bath-and-Body',
     'Clothing',
     'Food-and-Drink',
     'Merchandise',
@@ -24,20 +24,22 @@ const Home = () => {
   ];
 
 
-  
-
-
   // Shuffle products every render
   useEffect(() => {
     if (products) {
       const shuffled = shuffleArray(products);
       setShuffledProducts(shuffled);
+      setDisplayedProducts(shuffled);      
     }
   }, [products]);
 
-  useEffect(() => {
-    setDisplaProducts(shuffledProducts);
-  }, [shuffledProducts]);
+  // useEffect(() => {
+  //   setDisplayedProducts(shuffledProducts);
+  // }, [displayedProducts]);
+
+  // useEffect(() => {
+  //   setDisplayedProducts(shuffledProducts);
+  // }, [shuffledProducts]);
 
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
@@ -52,30 +54,62 @@ const Home = () => {
   };
 
   const sortProducts = () => {
-    let sortedProducts = [...products]; // Using the original products for sorting
-
+    let sortedProducts = [...displayedProducts];
+  
     // Sort by price
-    sortedProducts = sortedProducts.sort((a, b) => {
+    sortedProducts = displayedProducts.sort((a, b) => {
       return sortOrder === "asc" ? a.price - b.price : b.price - a.price;
     });
+    
+  
+    
+    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
 
-    // Filter by category if selectedCategory is set
-    if (selectedCategory) {
-      sortedProducts = sortedProducts.filter(
-        (product) => product.category === selectedCategory
-      );
+    // Update sort button text based on sorting order
+    const buttonText =
+      sortOrder === "asc" ? "Price: Low to High" : "Price: High to Low";
+    setSortButtonText(buttonText);
+    setDisplayedProducts(sortedProducts);
+    };
+
+
+  
+  const handleCategoryToggle = (category) => {
+    let updatedCategories = [];
+  
+    // If the category is already selected, remove it
+    if (selectedCategory && selectedCategory.includes(category)) {
+      updatedCategories = selectedCategory.filter((selected) => selected !== category);
+    } else {
+      // If the category isn't selected, add it to the list
+      updatedCategories = selectedCategory ? [...selectedCategory, category] : [category];
     }
 
-    setShuffledProducts(sortedProducts);
-    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-    setSortButtonText(
-      sortOrder === "asc" ? "Price (High to Low)" : "Price (Low to High)"
-    );
-  };
+    // Update the selected categories
+    setSelectedCategory(updatedCategories);
+  
+    // Filter the products based on the selected categories
+    let filteredProducts = shuffledProducts.filter((product) => {
+      return updatedCategories.includes(product.category);
+    });
+  
+    // If no categories are selected, show all products
+    if (updatedCategories.length === 0) {
+      filteredProducts = shuffledProducts;
+    }
 
-  const handleCategoryToggle = (category) => {
-    setSelectedCategory(selectedCategory === category ? null : category);
+
+    // if category is null
+    if (category === null) {
+      setSelectedCategory([]);
+      setDisplayedProducts(shuffledProducts);
+      return;
+    }
+  
+    // Update displayed products
+    setDisplayedProducts(filteredProducts);
   };
+  
 
   const handleQuantityChange = (product, quantity) => {
     setQuantities((prevQuantities) => ({
@@ -113,26 +147,40 @@ const Home = () => {
           Added to cart!
         </div>
       )}
-<div className = "categories">
-<h2>Categories:</h2>
-<div className = "category"> 
- {categories.map((category, index) => (
-<p key={index}>
-<button
- key={index}
- className= "categoryBar"
- onClick={() => handleCategoryToggle(category)}
->
- {category}
-</button>
-</p>
-))}
-<button onClick={() => setSelectedCategory(null)}>Show All</button>
 
-<div className = "sortBy">
-<p className = "sortBy">Sort By : </p>
-<button className = "sortBtn" onClick={sortProducts}>Price (High to Low)</button><p></p>
-</div>
+<div className = "categories">
+  <h2>Categories:</h2>
+  <div className = "category"> 
+    {categories.map((category, index) => (
+    <p key={index}>
+      <button
+      key={index}
+      className=  {selectedCategory && selectedCategory.includes(category) ? "categoryBar categoryBarSelect" : "categoryBar"}
+      onClick={() => handleCategoryToggle(category)}
+      >
+        {category}
+      </button>
+    </p>
+    ))}
+
+<button
+  className="showAllBtn"
+  onClick={() => {
+    setDisplayedProducts(shuffledProducts);
+    handleCategoryToggle(null);
+  }}
+>
+  Show All
+</button>
+
+    <h2 className = "sortBy">Sort By: </h2>
+      <button 
+      className = "sortBtn" 
+      onClick={sortProducts}>
+        {sortButtonText}
+        </button>
+
+
 </div>
 </div>
 
@@ -179,7 +227,8 @@ const Home = () => {
                       <img
                         src={addCartIcon}
                         alt="Add to Cart"
-                        className="addCartIcon"
+                        className="icon"
+                        id = "addCartIcon"
                       />
                     </button>
                   </div>
