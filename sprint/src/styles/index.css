@@ -82,16 +82,6 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-  /* border-radius: 50% / 30%; /* Adjust the horizontal and vertical radii 
-  background-color: rgba(255, 0, 127, 1);
-  box-shadow:
-    0 0 5px 5px rgba(255, 0, 127, 0.8),
-    0 0 10px 10px rgba(255, 0, 127, 0.8),
-    0 0 15px 15px rgba(255, 0, 127, 0.6),
-    0 0 20px 20px rgba(255, 0, 127, 0.4),
-    0 0 25px 25px rgba(255, 0, 127, 0.2);
-
-}  */
 /* end of banner css */
 
 
@@ -112,6 +102,10 @@ nav {
   justify-content: right;
   align-items: center;
   background-color: #039F4C;
+  background: hsla(0, 0%, 12%, 1);
+  background: linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
   height: 5.5vh;
   width: 100%;
   z-index: 99;
@@ -270,30 +264,34 @@ nav h3 {
   font-weight: 800;
   height: 5vh;
   width: 100%;
-  padding: 1%;
+  padding: 0;
   z-index: 999;
   position: fixed;
   margin-top: 23vh;
 }
 
 
-.categories h2 {
+/* .categories h2 {
   padding: 2%;
   color: white;
   width: fit-content;
-}
+} */
 
 .category {
   flex-wrap: nowrap;
   height: 5vh;
-  width:100%;
+  width:100vw;
   margin: 0;
-  padding: 0 3%;
+  padding: 0;
   position: relative; 
   display: flex;
   align-items: center;
   border-radius: 8px;
   background-color: #ff0080b4;
+  
+  background: linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(330, 100%, 50%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(330, 100%, 50%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(330, 100%, 50%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
   z-index: 9;
 }
 
@@ -309,12 +307,13 @@ nav h3 {
   height: 5vh;
   padding: 0 3%;
   margin: 0 10px;
+  
   align-items: center;
 }
 
 
 .category button:hover {
-  background-color: #ff008090;
+  background-color: #d08baec2;
   color: white;
   font-weight: 900;
   cursor: pointer;
@@ -389,6 +388,8 @@ nav h3 {
   height: fit-content;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.653);
+  border-radius: 10px;
+  border: 2px solid #ff0080b2;
   padding: 10px;
   margin-top: 30vh;
 }
@@ -434,10 +435,14 @@ nav h3 {
   justify-content: center;
   height: 100%;
   width: 100%;
-  border: 2px solid #017236;
+  border: 2px solid #57ff5db5;;
   padding: 10px;
   flex-direction: column;
   background-color: #039f4cbd;
+  background: hsla(0, 0%, 12%, 1);
+  background: linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
   border-radius: 10px;
 
 }
@@ -521,12 +526,13 @@ nav h3 {
   cursor: pointer;
   font-size: 12pt;
   margin-left:auto;
+  height: 3vh;
   width: fit-content;
   display: flex;
   justify-content: flex-end;
-  padding: 3px;
   background-color: transparent;
   border: none;
+  margin-bottom: 10px;
 }
 
 /* end of product list css */

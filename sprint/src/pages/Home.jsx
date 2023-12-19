@@ -149,7 +149,7 @@ const Home = () => {
       )}
 
 <div className = "categories">
-  <h2>Categories:</h2>
+  {/* <h2>Categories:</h2> */}
   <div className = "category"> 
     {categories.map((category, index) => (
     <p key={index}>
