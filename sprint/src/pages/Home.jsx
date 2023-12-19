@@ -15,7 +15,16 @@ const Home = () => {
   const [quantities, setQuantities] = useState({});
   const [showAddedToCartAlert, setShowAddedToCartAlert] = useState(false);
   const chimeSound = new Audio('/AddtoCart.mp3');
+  const categories = [
+    'Bath-and-Body',
+    'Clothing',
+    'Food-and-Drink',
+    'Merchandise',
+    'Seasonal'
+  ];
 
+
+  
 
 
   // Shuffle products every render
@@ -104,6 +113,29 @@ const Home = () => {
           Added to cart!
         </div>
       )}
+<div className = "categories">
+<h2>Categories:</h2>
+<div className = "category"> 
+ {categories.map((category, index) => (
+<p key={index}>
+<button
+ key={index}
+ className= "categoryBar"
+ onClick={() => handleCategoryToggle(category)}
+>
+ {category}
+</button>
+</p>
+))}
+<button onClick={() => setSelectedCategory(null)}>Show All</button>
+
+<div className = "sortBy">
+<p className = "sortBy">Sort By : </p>
+<button className = "sortBtn" onClick={sortProducts}>Price (High to Low)</button><p></p>
+</div>
+</div>
+</div>
+
       <div className="productList">
         <div className="listedProduct">
           {displayedProducts.map((product, index) => (

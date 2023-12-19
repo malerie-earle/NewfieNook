@@ -22,13 +22,13 @@ const Nav = () => {
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState('asc');
   const [sortButtonText, setSortButtonText] = useState('Price (Low to High)');
-  const categories = [
-    'Bath-and-Body',
-    'Clothing',
-    'Food-and-Drink',
-    'Merchandise',
-    'Seasonal'
-  ];
+  // const categories = [
+  //   'Bath-and-Body',
+  //   'Clothing',
+  //   'Food-and-Drink',
+  //   'Merchandise',
+  //   'Seasonal'
+  // ];
   const [quantities, setQuantities] = useState({});
   let sortedProducts = [];
   const totalItemCount = cartItems.reduce((total, item) => {
@@ -142,7 +142,7 @@ const Nav = () => {
  </div>
  </div>
 
-<div className = "categories">
+{/* <div className = "categories">
 <h2>Categories:</h2>
 <div className = "category"> 
  {categories.map((category, index) => (
@@ -163,7 +163,7 @@ const Nav = () => {
 <button className = "sortBtn" onClick={sortProducts}>Price (High to Low)</button><p></p>
 </div>
 </div>
-</div>
+</div> */}
 </div>
     </>
   );

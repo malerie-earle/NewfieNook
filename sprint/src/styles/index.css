@@ -58,7 +58,7 @@ body {
 
 .nlCircle {
   width: auto;
-  height: 10vh;
+  height: 12vh;
   margin: 2%;
   margin-top: 0;
   margin-right: auto;
@@ -134,7 +134,7 @@ nav h3 {
   flex-wrap: nowrap;
   justify-self: center;
   width: 7vw;
-  height: 35px;
+  height: 6vh;
   border-radius: 8px;
 
 }
@@ -263,14 +263,6 @@ nav h3 {
 }
 
 
-.categoryBar {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #ff0080fa;
-  z-index: 999;
-  width: 95vw;
-}
-
 .categories h2 {
   padding: 5px;
   color: white;
@@ -278,19 +270,16 @@ nav h3 {
 
 .category {
   flex-wrap: nowrap;
-  height: 7vh;
-  margin: 0 4%;
-  width: 100%;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
-  color: #57FF5D;
+  height: 5vh;
+  width:100%;
+  margin: 0;
+  padding: 0 10%;
   position: relative; 
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   border-radius: 8px;
-  transition: opacity 0.3s ease;
-  background-color: #ff0080;
+  background-color: #ff0080b4;
+  z-index: 9;
 }
 
 
