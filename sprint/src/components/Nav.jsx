@@ -31,7 +31,9 @@ const Nav = () => {
   ];
   const [quantities, setQuantities] = useState({});
   let sortedProducts = [];
- 
+  const totalItemCount = cartItems.reduce((total, item) => {
+    return total + item.quantity;
+  }, 0);
   // Shuffle products every render
   useEffect(() => {
     if (products) {
@@ -113,7 +115,8 @@ const Nav = () => {
           </Link>
 
           <div className="navBox" onClick={handleCartButtonClick}>
-            <img src = {cartIcon} alt = "Shopping Cart" className = "cartIcon" />({cartItems.length})
+            <img src = {cartIcon} alt = "Shopping Cart" className = "cartIcon" />
+            {totalItemCount > 0 && <span>({totalItemCount})</span>}
           </div>
 
           <Link to = "/checkout">

@@ -13,6 +13,10 @@ const Home = () => {
   const [sortButtonText, setSortButtonText] = useState("Price (Low to High)");
   const { addToCart, updateQuantity, cartItems } = useShoppingCart();
   const [quantities, setQuantities] = useState({});
+  const [showAddedToCartAlert, setShowAddedToCartAlert] = useState(false);
+  const chimeSound = new Audio('/AddtoCart.mp3');
+
+
 
   // Shuffle products every render
   useEffect(() => {
@@ -75,7 +79,13 @@ const Home = () => {
     const quantity = quantities[product.id] || 1; // Fetch the quantity for the product
     addToCart(product, quantity);
 
-    // Reset quantity back to 1
+    
+    chimeSound.play();
+  
+    // Hide the alert after 3 seconds
+    setTimeout(() => {
+      setShowAddedToCartAlert(false);
+    }, 3000);
     setQuantities((prevQuantities) => ({ ...prevQuantities, [product.id]: 1 }));
   };
 
@@ -89,6 +99,11 @@ const Home = () => {
 
   return (
     <>
+    {showAddedToCartAlert && (
+        <div className="addedToCartAlert">
+          Added to cart!
+        </div>
+      )}
       <div className="productList">
         <div className="listedProduct">
           {displayedProducts.map((product, index) => (
