@@ -14,12 +14,14 @@ export const useShoppingCart = () => {
 export const ShoppingCartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (item) => {
+  const addToCart = (item, quantity = 1) => {
     const existingItem = cartItems.find((existing) => existing.id === item.id);
     if (existingItem) {
-      updateQuantity(item.id, existingItem.quantity + 1);
+  
+      updateQuantity(item.id, existingItem.quantity + quantity);
     } else {
-      setCartItems([...cartItems, { ...item, quantity: 1 }]);
+  
+      setCartItems([...cartItems, { ...item, quantity }]);
     }
   };
 

@@ -2,7 +2,6 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Checkout from "../components/Checkout";
-import * as ShoppingCartContext from "../context/ShoppingCartContext";
 
 // Setting up mock context provider
 jest.mock("../context/ShoppingCartContext", () => ({

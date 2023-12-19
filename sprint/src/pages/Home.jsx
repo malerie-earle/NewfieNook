@@ -72,17 +72,9 @@ const Home = () => {
   };
 
   const handleAddToCart = (product) => {
-    const quantity = quantities[product.id] || 1;
-    const existingItemIndex = cartItems.findIndex((item) => item.id === product.id);
-  
-    if (existingItemIndex !== -1) {
-      // Item is already in the cart, update the quantity
-      updateQuantity(product.id, cartItems[existingItemIndex].quantity + quantity);
-    } else {
-      // Item is not in the cart, add it with the specified quantity
-      addToCart({ ...product, quantity });
-    }
-  
+    const quantity = quantities[product.id] || 1; // Fetch the quantity for the product
+    addToCart(product, quantity);
+
     // Reset quantity back to 1
     setQuantities((prevQuantities) => ({ ...prevQuantities, [product.id]: 1 }));
   };
