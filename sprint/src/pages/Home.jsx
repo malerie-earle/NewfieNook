@@ -5,7 +5,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext.js";
 import addCartIcon from "../images/addCart.png";
 import ScrollToTop from "react-scroll-to-top";
 import ProductDetailsModal from "../components/ProductDetails.jsx";
-
+import github from "../images/github.png";
 const Home = () => {
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
   const [displayedProducts, setDisplayedProducts] = useState([]);
@@ -194,6 +194,8 @@ const Home = () => {
         <p>
         © Copyright Python Pink - 2023
         </p>
+        <a href = "https://github.com/RyanGuinchard/Semester2-Final-Sprint/">
+        <img src = {github} alt = "GitHub Repo" className = "githubImg" /></a>
       </footer>
     </>
   );

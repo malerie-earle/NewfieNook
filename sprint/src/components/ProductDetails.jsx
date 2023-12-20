@@ -1,6 +1,6 @@
 import React from 'react';
 import { useShoppingCart } from '../context/ShoppingCartContext';
-
+import "../styles/index.css";
 const ProductDetailsModal = ({ product, onClose }) => {
   const { image, title, description } = product;
   const { closeProductDetails } = useShoppingCart(); // Use the hook to access context
