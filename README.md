@@ -1,4 +1,4 @@
-Newfie Nook 
+<h1>Newfie Nook</h1>
 (Mock E-Commerce Website)
 Website to order your favorite Newfoundland products right to your door!
 
