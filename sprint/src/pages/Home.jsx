@@ -11,12 +11,13 @@ const Home = () => {
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [shuffledProducts, setShuffledProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState("asc");
   const [sortButtonText, setSortButtonText] = useState("Price (Low to High)");
   const { addToCart, updateQuantity, cartItems } = useShoppingCart();
   const [quantities, setQuantities] = useState({});
   const [showAddedToCartAlert, setShowAddedToCartAlert] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null); // State for selected product for modal
+  const [selectedProduct, setSelectedProduct] = useState(null); 
   const chimeSound = new Audio('/AddtoCart.mp3');
   const categories = [
     'Clothing',
@@ -119,8 +120,8 @@ const Home = () => {
           <button
             className="showAllBtn"
             onClick={() => {
-              setDisplayedProducts(shuffledProducts);
               handleCategoryToggle(null);
+              setDisplayedProducts(shuffledProducts);
             }}
           >
             Show All
