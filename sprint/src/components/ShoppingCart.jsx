@@ -17,9 +17,6 @@ const ShoppingCart = () => {
   const handleCheckoutClick = () => {
     navigate('/checkout'); // Navigate to checkout page
   };
-  const handleBackToCartClick = () => {
-    navigate(-1); // Navigate back to the previous page
-  };
 
   // Calculate the total cart price
   const totalCartPrice = cartItems.reduce((total, item) => {
