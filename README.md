@@ -1,15 +1,16 @@
 <h1>Newfie Nook</h1>
-(Mock E-Commerce Website)
-Website to order your favorite Newfoundland products right to your door!
-
-Group Project:
-Malerie Earle (Home Page, Nav, Banner, Categories, Product List, Product Filter/Sorting)
-Ryan Guinchard (Shopping Cart, Add to Cart, Shopping Cart Context, Tests for 3 components)
-Justin Whelan (Shopping Cart, Checkout, Checkout Form, Checkout Page, Set Quantities, Go to Checkout)
-Christopher Cormier (Product Details)
-
-Assignment Instructions:
-
+<br />
+(Mock E-Commerce Website)<br />
+Website to order your favorite Newfoundland products right to your door!<br />
+<br />
+Group Project:<br />
+Malerie Earle (Home Page, Nav, Banner, Categories, Product List, Product Filter/Sorting)<br />
+Ryan Guinchard (Shopping Cart, Add to Cart, Shopping Cart Context, Tests for 3 components)<br />
+Justin Whelan (Shopping Cart, Checkout, Checkout Form, Checkout Page, Set Quantities, Go to Checkout)<br />
+Christopher Cormier (Product Details)<br />
+<br />
+Assignment Instructions:<br />
+<br />
   Project Requirements:
     1.	Have a Figma design done up for your project following the design principles that Levin taught you in UI/UX. (Generally speaking – a reasonable user experience, with some thought given to the aesthetics of the page)
     2.	Implement the project in React
