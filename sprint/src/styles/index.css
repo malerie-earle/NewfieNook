@@ -148,6 +148,7 @@ nav h3 {
 
 
 #addCartIcon {
+  z-index: 0;
   height: 35px;
   width: auto;
 }
@@ -579,4 +580,49 @@ nav h3 {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContainer {
+  width: 500px; 
+  max-width: 90%; 
+  background-color: #039F4C;
+  color: #333;
+  border: 3px solid #FF007Fb2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  z-index: 11;
+  overflow: auto; /* Add scroll if content is too long */
+}
+
+.closeBtn {
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.productImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productDescription {
+  max-width: 100%; /* Description takes full width of the modal */
+  word-wrap: break-word; /* Prevents overflow of long words */
 }
