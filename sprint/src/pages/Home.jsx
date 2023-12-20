@@ -194,8 +194,23 @@ const Home = () => {
         <p>
         © Copyright Python Pink - 2023
         </p>
-        <a href = "https://github.com/RyanGuinchard/Semester2-Final-Sprint/">
+        <a href = "https://github.com/RyanGuinchard/Semester2-Final-Sprint/" target="_blank" >
         <img src = {github} alt = "GitHub Repo" className = "githubImg" /></a>
+<div className = "collaborators">
+
+<a href = "#" target="_blank">
+<h3 className = "collaborators">Christopher Cormier</h3></a><br />
+
+<a href = "#" target="_blank">
+<h3 className = "collaborators">Malerie Earle</h3></a><br />
+
+<a href = "https://ryanguinchard.github.io/Portfolio2023-2024/" target="_blank">
+<h3 className = "collaborators">Ryan Guinchard</h3></a><br />
+
+<a href = "http://justins-portfolio.netlify.app" target="_blank">
+<h3 className = "collaborators">Justin Whelan</h3></a><br />
+</div>
+        
       </footer>
     </>
   );

@@ -625,7 +625,7 @@ z-index: 0;
 /* footer css */
 footer {
   color:white;
-  background-color: #FF007F;
+  background-color: #ff0080;
   width: 100%;
   height: 20vh;
   position: sticky absolute;
@@ -642,3 +642,21 @@ footer p {
   margin: 1%;
 }
 
+.collaborators {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: right;
+  margin: 10px;
+}
+
+.collaborators a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.collaborators a:hover {
+  background-color: rgba(255, 255, 255, 0.576);
+  border-radius: 10px;
+
+}
