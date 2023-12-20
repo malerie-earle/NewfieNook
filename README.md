@@ -45,7 +45,7 @@ Assignment Instructions:<br />
         </ul>
     </li>
     <li>
-      Upload the finished project to GitHub (https://github.com/RyanGuinchard/Semester2-Final-Sprint/assets/141525464/5b3287f6-ff36-446e-9af0-952a179d8b87)
+      Upload the finished project to GitHub
     </li>
   </ol>
   
