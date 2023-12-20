@@ -54,7 +54,10 @@ body {
 
 
 }
-
+.page-container {
+  width: 100%;
+  margin: 47px;
+}
 
 .nlCircle {
   display: flex;
@@ -550,10 +553,42 @@ z-index: 0;
 .checkout form {
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid #FF007F;  
   padding: 30px;
   width: 50%;
+background-color: #03753c;
+}
+.checkout label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fffcfc;
+  font-weight: 700;
+}
+.checkout input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #FF007F;
+  border-radius: 4px;
 }
 
+.checkout button {
+  background-color: #1e1e1e;
+  color: white;
+  border: #ffffff solid 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+ .checkout button:hover {
+  background-color: #03753c;
+  color: #1e1e1e;
+  border: #FF007F solid 1px;
+}
 .thankYouPopup {
   position: fixed;
   top: 0;
@@ -593,21 +628,26 @@ z-index: 0;
   width: 500px; 
   max-width: 90%; 
   background-color: #039F4C;
-  color: #333;
-  border: 3px solid #FF007Fb2;
+  background: hsla(0, 0%, 12%, 1);
+  background: linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+  color: rgb(255,255,255);
+  border: 2px solid #57ff5db5;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   z-index: 11;
   overflow: auto; /* Add scroll if content is too long */
+  text-align: center;
 }
 
 .closeBtn {
   float: right;
   border: none;
   background-color: transparent;
-  color: #333;
-  font-size: 20px;
+  color: rgb(255,255,255);
+  font-size: 20pt;
   cursor: pointer;
 }
 
@@ -619,6 +659,9 @@ z-index: 0;
 .productDescription {
   max-width: 100%; /* Description takes full width of the modal */
   word-wrap: break-word; /* Prevents overflow of long words */
+  color: rgb(255,255,255);
+  font-size: 15pt;
+  text-align: left;
 }
 
 

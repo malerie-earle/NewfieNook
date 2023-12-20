@@ -17,29 +17,20 @@ const Checkout = () => {
     return total + itemPrice * itemQuantity;
   }, 0);
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handlePaymentInfoChange = (e) => {
-    setPaymentInfo(e.target.value);
-  };
-
+  const handleNameChange = (e) => setName(e.target.value);
+  const handlePaymentInfoChange = (e) => setPaymentInfo(e.target.value);
   const handlePlaceOrder = () => {
-    // Handle the order placement logic here
     console.log(`Name: ${name}, Payment Info: ${paymentInfo}`);
     setShowThankYouPopup(true);
   };
-
   const closeThankYouPopup = () => {
     setShowThankYouPopup(false);
     navigate('/'); // Optionally navigate to a different page
   };
-  const handleBackToCartClick = () => {
-    navigate(-1); // Navigate to the cart page
-  };
+  const handleBackToCartClick = () => navigate(-1); // Navigate to the cart page
+
   return (
-    <div className="homeCheckout">
+    <div className="page-container"> {/* Wrapper to ensure consistent styling */}
       <div className="checkout">
         <h2>Checkout</h2>
         <div className="totalPrice">
