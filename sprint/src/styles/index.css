@@ -11,7 +11,7 @@
 body {
   background-color: #1e1e1e;
   height: 100%;
-  width: 95vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -29,7 +29,7 @@ body {
   border-bottom: 2px solid #FF007Fb2;
   border-top: 2px solid #ff0080b2;
   height: 18vh;
-  width: 100vw;
+  width: 100%;
   z-index: 5;
   position: fixed;
   display: flex;
@@ -70,24 +70,20 @@ body {
 
 .newfieNookTitle {
   display: flex;
-  position: absolute;
-  top: 0;
-  padding: 3%;
-  padding-top: 0;
-  margin-left: 8%;
-  margin-top:  0;
-  margin-bottom: 7%;
-  width: 45vw;
-  height: auto;
+  height: 15vh;
+  width: auto;
   align-items: center;
-  justify-content: flex-start;
+  position: absolute;
+  left: 10vw;
+  margin-right: auto;
+  margin-left: 0;
+  
 }
 /* end of banner css */
 
 
 /* nav css */
 nav {
-  flex-wrap: nowrap;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -272,16 +268,10 @@ nav h3 {
 }
 
 
-/* .categories h2 {
-  padding: 2%;
-  color: white;
-  width: fit-content;
-} */
-
 .category {
   flex-wrap: nowrap;
   height: 5vh;
-  width:100vw;
+  width:100%;
   margin: 0;
   padding: 0;
   position: relative; 
@@ -289,7 +279,6 @@ nav h3 {
   align-items: center;
   border-radius: 8px;
   background-color: #ff0080b4;
-  
   background: linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(330, 100%, 50%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(330, 100%, 50%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(330, 100%, 50%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
@@ -306,10 +295,11 @@ nav h3 {
   flex-wrap: nowrap;
   width: max-content;
   height: 5vh;
-  padding: 0 3%;
-  margin: 0 10px;
-  
+  padding: 0 10px;
+  margin: 0 5px;
   align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 
@@ -323,9 +313,6 @@ nav h3 {
   border: 1px solid #57FF5D;
 }
 
-/* .categoryBar {
-
-} */
 
 .categoryBarSelect {
   color:#03753c;
@@ -335,7 +322,9 @@ nav h3 {
 .sortBy {
   margin-left: auto;
   display: flex;
-  justify-content: end;  
+  justify-content: end;
+  align-items: center;
+
 }
 
 
@@ -345,7 +334,7 @@ nav h3 {
   width: auto;
   display: flex;
   align-items: center;
-  font-size: 15pt;
+  font-size: 1em;
 }
 
 
@@ -358,9 +347,11 @@ nav h3 {
   flex-wrap: nowrap;
   height: 4.75vh;
   width: auto;
-  padding: 1%;
+  padding: 5px;
   align-items: center;
-  font-size: 15pt;
+  font-size: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 
@@ -384,14 +375,15 @@ nav h3 {
 .productList {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   color: white;
-  width: 98%;
+  width: 95%;
   height: fit-content;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.653);
   border-radius: 10px;
   border: 2px solid #ff0080b2;
-  padding: 10px;
+  padding: 5px;
   margin-top: 30vh;
 }
 
@@ -399,7 +391,7 @@ nav h3 {
 .listedProduct {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 20px;
   margin: 0 auto;
   justify-content: center;
   flex-direction: column; 
@@ -436,7 +428,7 @@ nav h3 {
   justify-content: center;
   height: 100%;
   width: 100%;
-  border: 2px solid #57ff5db5;;
+  border: 2px solid #57ff5db5;
   padding: 10px;
   flex-direction: column;
   background-color: #039f4cbd;
@@ -460,7 +452,7 @@ nav h3 {
   height: 10vh;
   max-height: max-content;
   align-items: center;
-  margin: 5% auto;
+  margin: 3% auto;
 
 }
 
@@ -582,6 +574,7 @@ nav h3 {
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 .modalBackground {
   position: fixed;
   top: 0;
@@ -626,3 +619,105 @@ nav h3 {
   max-width: 100%; /* Description takes full width of the modal */
   word-wrap: break-word; /* Prevents overflow of long words */
 }
+=======
+
+/* footer css */
+footer {
+  color:white;
+  background-color: #FF007F;
+  width: 100%;
+  height: 20vh;
+  position: sticky absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: end;
+}
+
+
+footer p {
+  margin: 1%;
+}
+
+@media (30em <= width <= 965px) {
+  .listedProduct {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column; 
+    width: 80%;
+    height: auto;
+    }
+    
+
+    .productImage {
+      display: flex;
+      justify-content: center;
+      height: auto;
+      width: 80%;
+      margin: 0 auto;
+      max-height: 25vh;
+    }
+
+
+    .productTitle {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 10vh;
+      max-height: max-content;
+      align-items: center;
+      margin: 1% auto;
+    
+    }
+    
+    
+    .h3Title {
+      color: white;
+      -webkit-text-stroke-width: 0.75px;
+      -webkit-text-stroke-color: black;
+      font-weight: 700;
+      font-size: 0.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 10vh;
+    }
+    
+    .productList {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      color: white;
+      width: 95%;
+      height: fit-content;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.653);
+      border-radius: 10px;
+      border: 2px solid #ff0080b2;
+      padding: 5px;
+      margin-top: 30vh;
+    }
+
+    .navBar {
+      display: flex;
+      right: 0;
+      flex-wrap: wrap;
+      justify-content: right;
+      align-items: center;
+      background: hsla(0, 0%, 12%, 1);
+      background: linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+      background: -moz-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+      background: -webkit-linear-gradient(90deg, hsla(0, 0%, 12%, 1) 0%, hsla(148, 96%, 32%, 1) 50%, hsla(0, 0%, 12%, 1) 100%);
+      min-height: 5.5vh;
+      max-height: fit-content;
+      width: 100%;
+      z-index: 99;
+    }
+  }
+>>>>>>> Stashed changes

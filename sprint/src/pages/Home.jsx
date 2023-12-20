@@ -1,8 +1,17 @@
+<<<<<<< Updated upstream
 import React, { useState, useEffect } from 'react';
 import useFetch from '../hooks/useFetch.jsx';
 import { useShoppingCart } from '../context/ShoppingCartContext.js';
 import addCartIcon from '../images/addCart.png';
 import ProductDetailsModal from '../components/ProductDetails.jsx';
+=======
+import "../styles/index.css";
+import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch.jsx";
+import { useShoppingCart } from "../context/ShoppingCartContext.js";
+import addCartIcon from "../images/addCart.png";
+import ScrollToTop from "react-scroll-to-top";
+>>>>>>> Stashed changes
 
 const Home = () => {
   const { data: products, loading, error } = useFetch('http://localhost:8080/products');
@@ -181,12 +190,21 @@ const Home = () => {
         </div>
       </div>
 
+<<<<<<< Updated upstream
       {selectedProduct && (
         <ProductDetailsModal
           product={selectedProduct}
           onClose={handleCloseModal}
         />
       )}
+=======
+      <footer>
+        <ScrollToTop smooth className = "scrollTop" />
+        <p>
+        © Copyright Python Pink - 2023
+        </p>
+      </footer>
+>>>>>>> Stashed changes
     </>
   );
 };
