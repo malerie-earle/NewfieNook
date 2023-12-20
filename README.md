@@ -1,4 +1,5 @@
-Newfie Nook Mock E-Commerce Website
+Newfie Nook 
+(Mock E-Commerce Website)
 Website to order your favorite Newfoundland products right to your door!
 
 Group Project:
