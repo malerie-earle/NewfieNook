@@ -7,7 +7,7 @@ import ScrollToTop from "react-scroll-to-top";
 import ProductDetailsModal from "../components/ProductDetails.jsx";
 import github from "../images/github.png";
 const Home = () => {
-  const { data: products, loading, error } = useFetch('http://localhost:8080/products');
+  const { data: products, loading, error } = useFetch('https://shimmer-chivalrous-rhubarb.glitch.me/products');
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [shuffledProducts, setShuffledProducts] = useState([]);
