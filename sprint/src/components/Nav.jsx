@@ -15,7 +15,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext.js';
 const Nav = () => {
   const [isCartVisible, setCartVisible] = useState(false);
   const { addToCart, updateQuantity, cartItems, removeFromCart } = useShoppingCart();
-  const { data: products, loading, error } = useFetch('http://localhost:8080/products');
+  const { data: products, loading, error } = useFetch('https://shimmer-chivalrous-rhubarb.glitch.me/products');
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [sortOrder, setSortOrder] = useState('asc');
   const [quantities, setQuantities] = useState({});
