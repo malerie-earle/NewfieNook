@@ -21,7 +21,7 @@
     "start": "concurrently \"npm run json-server\" \"react-scripts start\"",
     "test": "react-scripts test",
     "build": "react-scripts build",
-    "json-server": "json-server --watch ./server/db.json --port 8080",
+    "json-server": "json-server --watch db.json --port 8080",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^8.2.2",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
