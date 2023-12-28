@@ -11,6 +11,7 @@ Christopher Cormier - (Product Details)<br />
 Professor Remarks:<br />
 "This is a very good effort. Your design overall is quite impressive. A very good project. 10/10" - Noman Atique
 <br />
+<br />
 Assignment Instructions:<br />
 <br />
   Project Requirements:<br />
