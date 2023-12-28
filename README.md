@@ -1,7 +1,9 @@
 <h1>Newfie Nook</h1>
 (Mock E-Commerce Website)<br />
 Website to order your favorite Newfoundland products right to your door!<br />
-[Netlify Status](https://api.netlify.com/api/v1/badges/809087d0-52b1-462a-ad02-4ae65c773aee/deploy-status)](https://app.netlify.com/sites/newfie-nook/deploys)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/809087d0-52b1-462a-ad02-4ae65c773aee/deploy-status)](https://app.netlify.com/sites/newfie-nook/deploys)
+
 <br />
 Group Project:<br />
 Malerie Earle - (Home Page, Nav, Banner, Categories, Product List, Product Filter/Sorting)<br />
