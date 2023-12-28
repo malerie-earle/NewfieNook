@@ -8,6 +8,9 @@ Ryan Guinchard - (Shopping Cart, Add to Cart, Shopping Cart Context, Tests for 3
 Justin Whelan - (Shopping Cart, Checkout, Checkout Form, Checkout Page, Set Quantities, Go to Checkout)<br />
 Christopher Cormier - (Product Details)<br />
 <br />
+Professor Remarks:<br />
+"This is a very good effort. Your design overall is quite impressive. A very good project. 10/10" - Noman Atique
+<br />
 Assignment Instructions:<br />
 <br />
   Project Requirements:<br />
