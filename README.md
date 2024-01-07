@@ -3,6 +3,7 @@
 Website to order your favorite Newfoundland products right to your door!<br />
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/809087d0-52b1-462a-ad02-4ae65c773aee/deploy-status)](https://app.netlify.com/sites/newfie-nook/deploys)
+<img width="1424" alt="newfieNook" src="https://github.com/malerie-earle/NewfieNook/assets/141525464/368b935e-24e1-448f-96dc-a753d34cf244">
 
 <br />
 Group Project:<br />
